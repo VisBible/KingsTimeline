@@ -1,0 +1,245 @@
+# 先知服事時間表
+# 從大衛到西底家，每位先知包含：名字、年份、對應的王、所屬 kingdom
+# kingdom: "united" | "north" | "south" 或陣列 ["north","south"] 表示同時服事兩國
+# 年份採用 BC（主前）與 king_list.toml 一致
+
+# ========== 統一王國時期 ==========
+
+[[prophet]]
+name = "拿單"
+en = "Nathan"
+start = 1010
+end = 970
+kingdom = "united"
+kings = ["大衛"]
+ref = "撒下7, 12; 代上17"
+
+[[prophet]]
+name = "迦得"
+en = "Gad"
+start = 1010
+end = 970
+kingdom = "united"
+kings = ["大衛"]
+ref = "撒下24; 代上21"
+
+[[prophet]]
+name = "亞希雅"
+en = "Ahijah"
+start = 931
+end = 910
+kingdom = ["united", "north"]
+kings = ["所羅門", "耶羅波安一世"]
+ref = "王上11:29-39, 14:1-18"
+
+# ========== 分裂王國時期 ==========
+
+[[prophet]]
+name = "示瑪雅"
+en = "Shemaiah"
+start = 931
+end = 913
+kingdom = ["north", "south"]
+kings = ["羅波安", "耶羅波安一世"]
+ref = "王上12:22-24; 代下11:2-4, 12:5-8"
+
+[[prophet]]
+name = "耶戶（哈拿尼的兒子）"
+en = "Jehu son of Hanani"
+start = 909
+end = 886
+kingdom = "north"
+kings = ["巴沙"]
+ref = "王上16:1-4, 7"
+
+[[prophet]]
+name = "哈拿尼"
+en = "Hanani"
+start = 910
+end = 869
+kingdom = "south"
+kings = ["亞撒"]
+ref = "代下16:7-9"
+
+[[prophet]]
+name = "亞撒利雅（俄德的兒子）"
+en = "Azariah son of Oded"
+start = 910
+end = 869
+kingdom = "south"
+kings = ["亞撒"]
+ref = "代下15:1-7"
+
+[[prophet]]
+name = "耶戶（先見）"
+en = "Jehu the seer"
+start = 909
+end = 848
+kingdom = ["north", "south"]
+kings = ["巴沙", "約沙法"]
+ref = "王上16:1-4; 代下19:2, 20:34"
+
+[[prophet]]
+name = "以利亞"
+en = "Elijah"
+start = 874
+end = 852
+kingdom = "north"
+kings = ["亞哈", "亞哈謝", "約蘭"]
+ref = "王上17-19, 21; 王下1-2; 代下21:12-15"
+
+[[prophet]]
+name = "米該雅"
+en = "Micaiah"
+start = 874
+end = 853
+kingdom = "north"
+kings = ["亞哈"]
+ref = "王上22"
+
+[[prophet]]
+name = "以利沙"
+en = "Elisha"
+start = 852
+end = 782
+kingdom = "north"
+kings = ["約蘭", "耶戶", "約哈斯", "約阿施"]
+ref = "王上19:19-21; 王下2-9, 13:14-21"
+
+[[prophet]]
+name = "以利以謝"
+en = "Eliezer"
+start = 872
+end = 848
+kingdom = "south"
+kings = ["約沙法"]
+ref = "代下20:37"
+
+[[prophet]]
+name = "亞哈悉"
+en = "Jahaziel"
+start = 872
+end = 848
+kingdom = "south"
+kings = ["約沙法"]
+ref = "代下20:14"
+note = "利未人，神的靈感動他預言"
+
+[[prophet]]
+name = "撒迦利亞（耶何耶大的兒子）"
+en = "Zechariah son of Jehoiada"
+start = 835
+end = 796
+kingdom = "south"
+kings = ["約阿施"]
+ref = "代下24:20-22"
+note = "祭司，被神的靈感動向百姓說預言"
+
+[[prophet]]
+name = "俄德"
+en = "Oded"
+start = 743
+end = 715
+kingdom = "south"
+kings = ["亞哈斯"]
+ref = "代下28:9-11"
+
+[[prophet]]
+name = "約拿"
+en = "Jonah"
+start = 793
+end = 753
+kingdom = "north"
+kings = ["耶羅波安二世"]
+ref = "王下14:25; 拿1:1"
+
+[[prophet]]
+name = "阿摩司"
+en = "Amos"
+start = 767
+end = 753
+kingdom = ["north", "south"]
+kings = ["烏西雅", "耶羅波安二世"]
+ref = "摩1:1"
+
+[[prophet]]
+name = "何西阿"
+en = "Hosea"
+start = 753
+end = 715
+kingdom = ["north", "south"]
+kings = ["烏西雅", "約坦", "亞哈斯", "希西家", "耶羅波安二世"]
+ref = "何1:1"
+
+[[prophet]]
+name = "以賽亞"
+en = "Isaiah"
+start = 740
+end = 686
+kingdom = "south"
+kings = ["烏西雅", "約坦", "亞哈斯", "希西家"]
+ref = "賽1:1, 6:1; 王下19-20; 代下26:22, 32:20"
+
+[[prophet]]
+name = "彌迦"
+en = "Micah"
+start = 750
+end = 686
+kingdom = "south"
+kings = ["約坦", "亞哈斯", "希西家"]
+ref = "彌1:1; 耶26:18"
+
+[[prophet]]
+name = "那鴻"
+en = "Nahum"
+start = 663
+end = 612
+kingdom = "south"
+kings = ["瑪拿西", "亞們", "約西亞"]
+ref = "鴻1:1; 3:8-10"
+
+[[prophet]]
+name = "西番雅"
+en = "Zephaniah"
+start = 640
+end = 609
+kingdom = "south"
+kings = ["約西亞"]
+ref = "番1:1"
+
+[[prophet]]
+name = "戶勒大"
+en = "Huldah"
+start = 640
+end = 609
+kingdom = "south"
+kings = ["約西亞"]
+ref = "王下22:14-20; 代下34:22-28"
+
+[[prophet]]
+name = "耶利米"
+en = "Jeremiah"
+start = 626
+end = 586
+kingdom = "south"
+kings = ["約西亞", "約哈斯", "約雅敬", "約雅斤", "西底家"]
+ref = "耶1:2-3; 代下36:12"
+
+[[prophet]]
+name = "哈巴谷"
+en = "Habakkuk"
+start = 609
+end = 597
+kingdom = "south"
+kings = ["約雅敬"]
+ref = "哈1:1"
+
+[[prophet]]
+name = "俄巴底亞"
+en = "Obadiah"
+start = 586
+end = 586
+kingdom = "south"
+kings = ["西底家"]
+ref = "俄1:1"
+note = "預言以東的下場，可能於耶路撒冷陷落後寫成"

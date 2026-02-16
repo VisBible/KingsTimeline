@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南北兩國君王時間線</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', '微軟正黑體', Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px 0 20px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        /* 统一王国 */
+        .unified-kingdom {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #fff9e6;
+            border: 2px solid #f39c12;
+            border-radius: 10px;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f39c12;
+        }
+        
+        .unified-section {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            margin-right: 24px;
+            align-self: flex-start;
+        }
+        .unified-prophets {
+            display: grid;
+            gap: 6px 24px;
+            min-height: 32px;
+            margin-bottom: 6px;
+        }
+        .unified-spacer {
+            flex-shrink: 0;
+            min-height: 270px;
+        }
+        .unified-kings {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: nowrap;
+            flex-shrink: 0;
+            height: 240px;
+            margin-top: 0;
+        }
+        
+        /* 分裂王国时间线 */
+        .timeline-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        /* 外層滾動 */
+        .outer-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            align-items: stretch;
+        }
+        
+        .outer-scroll-content {
+            display: flex;
+            gap: 0;
+            min-width: min-content;
+            align-items: stretch;
+            --col-width: 260px;
+        }
+        
+        /* 固定標籤列 */
+        .fixed-labels {
+            flex-shrink: 0;
+            position: sticky;
+            left: 0;
+            z-index: 10;
+            background: white;
+            padding-right: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .label-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 240px;
+            margin-bottom: 30px;
+        }
+        .label-section.prophet-label {
+            height: 120px;
+            margin-bottom: 15px;
+        }
+        .label-section.prophet-label:first-child {
+            margin-bottom: 15px;
+        }
+        .label-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .kingdom-label {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 15px 20px;
+            border-radius: 5px;
+            text-align: center;
+            min-width: 100px;
+            writing-mode: horizontal-tb;
+        }
+        
+        .north-label {
+            background: #e4e4e4;
+            color: #000000;
+            border: 2px solid #000000;
+        }
+        
+        .south-label {
+            background: #ffebee;
+            color: #c62828;
+            border: 2px solid #c62828;
+        }
+        
+        .prophet-label-text {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-align: center;
+            min-width: 100px;
+            background: #f5f5f5;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+        
+        .prophet-timeline-row {
+            display: flex;
+            align-items: stretch;
+            gap: 24px;
+            min-height: 120px;
+            margin-bottom: 15px;
+        }
+        .prophet-timeline-row:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        .prophet-track {
+            display: grid;
+            gap: 6px 24px;
+            min-width: max-content;
+            position: relative;
+            flex-shrink: 0;
+            margin-bottom: 10px;
+            min-height: 32px;
+        }
+        .prophet-track:last-of-type {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        
+        .prophet-box {
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.75em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 6px;
+            min-height: 20px;
+        }
+        .prophet-box.north-prophet {
+            background: #bbdefb;
+            color: #0d47a1;
+            border: 1px solid #1976d2;
+        }
+        .prophet-box.south-prophet {
+            background: #bbdefb;
+            color: #0d47a1;
+            border: 1px solid #1976d2;
+        }
+        .prophet-box.unified-prophet {
+            background: #fff3e0;
+            color: #e65100;
+            border: 1px solid #f39c12;
+        }
+        .prophet-box-name { font-weight: bold; }
+        .prophet-box-en { opacity: 0.9; }
+        
+        .timeline-body {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+        
+        .timeline-container {
+            display: flex;
+            gap: 24px;
+            min-width: max-content;
+            position: relative;
+            flex-shrink: 0;
+        }
+        
+        .time-column {
+            min-width: 260px;
+            flex-shrink: 0;
+            position: relative;
+            align-self: flex-start;
+        }
+        
+        .kingdom-section {
+            margin-bottom: 30px;
+        }
+        .kingdom-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .king-box {
+            text-align: center;
+            padding: 12px 10px;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            height: 240px;
+            min-width: 240px;
+            max-width: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow-y: hidden;
+            cursor: pointer;
+        }
+        
+        .king-box.empty {
+            opacity: 0.3;
+            background: #fafafa;
+            justify-content: center;
+            cursor: default;
+        }
+        
+        .king-box:not(.empty):hover {
+            border-color: #f39c12;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .king-box.focused {
+            border-color: #f39c12;
+            box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.3);
+        }
+        
+        /* 王的名字颜色 */
+        .king-name-zh {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 2px;
+            flex-shrink: 0;
+        }
+        
+        .good-king .king-name-zh {
+            color: #d32f2f;
+        }
+        
+        .evil-king .king-name-zh {
+            color: #000000;
+        }
+        
+        .mixed-king .king-name-zh {
+            color: #757575;
+        }
+        
+        .king-name-en {
+            font-size: 0.8em;
+            color: #666;
+            margin-bottom: 6px;
+            flex-shrink: 0;
+        }
+        
+        .king-years {
+            font-size: 0.7em;
+            color: #888;
+            margin-bottom: 8px;
+            flex-shrink: 0;
+        }
+        
+        .king-events {
+            text-align: left;
+            font-size: 0.75em;
+            line-height: 1.5;
+            list-style: none;
+            padding-left: 0;
+            flex-grow: 1;
+        }
+        
+        .king-events li {
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 12px;
+        }
+        
+        .king-events li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+        
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 100;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-overlay.show {
+            display: flex;
+        }
+        
+        .modal-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            width: 70vw;
+            height: 70vh;
+            overflow-y: auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            border: 2px solid #f39c12;
+        }
+        
+        .modal-card .king-name-zh { font-size: 1.4em; margin-bottom: 4px; }
+        .modal-card.good-king .king-name-zh { color: #d32f2f; }
+        .modal-card.evil-king .king-name-zh { color: #000000; }
+        .modal-card.mixed-king .king-name-zh { color: #757575; }
+        .modal-card .king-name-en { font-size: 0.95em; margin-bottom: 8px; }
+        .modal-card .king-years { font-size: 0.85em; margin-bottom: 12px; }
+        .modal-card .king-events { font-size: 0.9em; line-height: 1.7; }
+        .modal-card .king-events li { margin-bottom: 8px; padding-left: 15px; }
+        
+        .good-deed {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        
+        .evil-deed {
+            color: #000000;
+            font-weight: bold;
+        }
+        
+        .god-deed {
+            color: #1976d2;
+            font-weight: bold;
+        }
+        
+        .other-event {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .legend-box {
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+        }
+        
+        .keyboard-hint {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e3f2fd;
+            border-radius: 5px;
+            color: #1976d2;
+            font-size: 0.9em;
+        }
+        
+        /* 註釋區域 */
+        .notes-section {
+            margin-top: 50px;
+            padding: 25px;
+            background: #f9f9f9;
+            border-left: 4px solid #666;
+            border-radius: 5px;
+        }
+        
+        .notes-section h3 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .notes-section ul {
+            list-style-position: inside;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .notes-section li {
+            margin-bottom: 8px;
+        }
+        
+        /* Footer - 黑色背景，白色字體 */
+        .footer {
+            background: #000000;
+            color: #ffffff;
+            margin-top: 60px;
+            padding: 40px 20px 20px 20px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .footer-section {
+            margin-bottom: 15px;
+        }
+        
+        .footer-section h4 {
+            font-size: 1em;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+        
+        .footer-section p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+        
+        .footer-section a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: #81d4fa;
+            text-decoration: underline;
+        }
+        
+        .footer-divider {
+            width: 60%;
+            height: 1px;
+            background: #444;
+            margin: 15px 0;
+        }
+        
+        .copyright {
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #888;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
+            
+            .footer-divider {
+                display: none;
+            }
+        }
+        
+        /* 手機版：南國/北國直式 + 捲動時標籤黏在左側 + 較小 box */
+        @media (max-width: 767px) {
+            .container { padding: 20px; }
+            .timeline-wrapper { margin-left: -20px; margin-right: -20px; }
+            .fixed-labels {
+                position: sticky;
+                left: 0;
+                padding-left: 8px;
+                padding-right: 12px;
+            }
+            .fixed-labels .kingdom-label {
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                min-width: auto;
+                padding: 12px 8px;
+                font-size: 1.1em;
+            }
+            .label-section { height: 160px; }
+            .king-box {
+                padding: 8px 6px;
+                height: 160px;
+                min-width: 160px;
+                max-width: 180px;
+            }
+            .king-name-zh { font-size: 0.95em; }
+            .king-name-en { font-size: 0.7em; margin-bottom: 4px; }
+            .king-years { font-size: 0.6em; margin-bottom: 6px; }
+            .king-events { font-size: 0.65em; line-height: 1.4; }
+            .king-events li { margin-bottom: 2px; padding-left: 10px; }
+            .unified-spacer { min-height: 190px; }
+            .unified-kings { height: 160px; gap: 20px; }
+            .time-column { min-width: 180px; }
+            .outer-scroll-content { --col-width: 180px; }
+            .footer-content { align-items: flex-start; }
+            .footer-section { text-align: left; }
+            .legend {
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>聖經君王時序</h1>
+        
+        <div class="keyboard-hint">
+            💡 點擊任何君王查看詳情 | ⌨️ 彈出視窗中使用鍵盤方向鍵導航：← → 切換君王 | ↑ ↓ 切換北國/南國 | Esc 關閉
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-box" style="background: #d32f2f;"></div>
+                <span>好王 / 行神喜悅的事</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box" style="background: #757575;"></div>
+                <span>介於兩者之間的王</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box" style="background: #000000;"></div>
+                <span>惡王 / 行神不喜悅的事</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box" style="background: #1976d2;"></div>
+                <span>神作為</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box" style="background: #2e7d32;"></div>
+                <span>外邦作為</span>
+            </div>
+        </div>
+        
+        <div class="timeline-wrapper">
+            <div class="outer-scroll" id="outer-scroll">
+                <div class="outer-scroll-content">
+                    <div class="unified-section" id="unified-section">
+                        <div class="unified-spacer"></div>
+                        <div class="unified-prophets" id="unified-prophets"></div>
+                        <div class="unified-kings" id="unified-kings"></div>
+                    </div>
+                    <div class="fixed-labels">
+                        <div class="label-section">
+                            <div class="kingdom-label north-label">北國</div>
+                        </div>
+                        <div class="label-section">
+                            <div class="kingdom-label south-label">南國</div>
+                        </div>
+                    </div>
+                    <div class="timeline-body" id="timeline-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 註釋區域 -->
+        <div class="notes-section">
+            <h3>📝 註釋</h3>
+            <ul>
+                <li>作王年份引用自 NLT Study Bible</li>
+                <li>事件與經文引用主要來自列王紀、歷代志</li>
+                <li>顏色分類基於各王在位期間是否遵行神的道</li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <!-- Footer - 在 container 外面 -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>📩 聯絡資訊</h4>
+                <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-section">
+                <h4>ℹ︎ 關於</h4>
+                <p>這是一個幫助理解聖經歷史的視覺化工具</p>
+            </div>
+            
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h4>☕️ 支持我們</h4>
+                <p>如果這個工具對您有幫助，歡迎<a href="#" target="_blank">贊助支持</a></p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2025 聖經君王時序. 保留所有權利.</p>
+        </div>
+    </div>
+    
+    <!-- 彈出卡 -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-card" id="modal-card"></div>
+    </div>
+    
+    <script type="module">
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+        function kingFromToml(t) {
+            const start = Number(t.start);
+            const end = Number(t.end);
+            const duration = start - end;
+            const events = [];
+            const deeds = (t.deeds && t.deeds.deed) ? (Array.isArray(t.deeds.deed) ? t.deeds.deed : [t.deeds.deed]) : [];
+            deeds.forEach(function(d) {
+                const cls = (d.type === 'good') ? 'good-deed' : 'evil-deed';
+                events.push('<span class="' + cls + '">' + escapeHtml(d.name) + '</span>');
+            });
+            const godDeeds = (t.god_deeds && t.god_deeds.deed) ? (Array.isArray(t.god_deeds.deed) ? t.god_deeds.deed : [t.god_deeds.deed]) : [];
+            godDeeds.forEach(function(d) {
+                events.push('<span class="god-deed">' + escapeHtml(d.name) + '</span>');
+            });
+            const otherEvents = (t.other_events && t.other_events.event) ? (Array.isArray(t.other_events.event) ? t.other_events.event : [t.other_events.event]) : [];
+            otherEvents.forEach(function(ev) {
+                events.push('<span class="other-event">' + escapeHtml(ev.name) + '</span>');
+            });
+            return {
+                name: t.name,
+                en: t.en,
+                start: start,
+                end: end,
+                type: t.type,
+                kingdom: t.kingdom,
+                events: events,
+                yearsLabel: start + '-' + end + ' BC（' + duration + '年）'
+            };
+        }
+        
+        function buildAllPeriods(northKings, southKings) {
+            const allPeriods = [];
+            northKings.forEach(nk => {
+                allPeriods.push({ north: nk, south: null, start: nk.start, end: nk.end });
+            });
+            southKings.forEach(sk => {
+                let found = false;
+                for (let period of allPeriods) {
+                    if (period.north &&
+                        ((sk.start <= period.north.start && sk.end >= period.north.start) ||
+                         (sk.start <= period.north.end && sk.end >= period.north.end) ||
+                         (sk.start >= period.north.start && sk.end <= period.north.end) ||
+                         (period.north.start >= sk.start && period.north.end <= sk.end))) {
+                        if (!period.south) {
+                            period.south = sk;
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+                if (!found) {
+                    allPeriods.push({ north: null, south: sk, start: sk.start, end: sk.end });
+                }
+            });
+            allPeriods.sort((a, b) => b.start - a.start);
+            return allPeriods;
+        }
+        
+        function buildNavGrid(unifiedKings, allPeriods) {
+            const rows = [[], []];
+            unifiedKings.forEach(k => { rows[0].push(k); rows[1].push(null); });
+            allPeriods.forEach(p => {
+                rows[0].push(p.north);
+                rows[1].push(p.south);
+            });
+            return { rows: rows };
+        }
+        
+        let navGrid = null;
+        let currentNav = { row: 0, col: 0 };
+        
+        function prophetFromToml(p) {
+            const start = Number(p.start);
+            const end = Number(p.end);
+            const kings = Array.isArray(p.kings) ? p.kings : (p.kings ? [p.kings] : []);
+            const kd = p.kingdom;
+            const kingdoms = Array.isArray(kd) ? kd : (kd ? [kd] : []);
+            const isNorth = kingdoms.includes('north');
+            const isSouth = kingdoms.includes('south');
+            const isUnified = kingdoms.includes('united');
+            return { name: p.name, en: p.en || '', start, end, kings, isNorth, isSouth, isUnified };
+        }
+        
+        function prophetOverlapsPeriod(prophet, period, targetKingdom) {
+            if (targetKingdom === 'north') {
+                return period.north && prophet.kings.includes(period.north.name);
+            }
+            if (targetKingdom === 'south') {
+                return period.south && prophet.kings.includes(period.south.name);
+            }
+            const periodKings = [];
+            if (period.north) periodKings.push(period.north.name);
+            if (period.south) periodKings.push(period.south.name);
+            return periodKings.some(k => prophet.kings.includes(k));
+        }
+        
+        function computeProphetColumns(prophet, periods, targetKingdom) {
+            let colStart = -1, colEnd = -1;
+            periods.forEach((period, i) => {
+                if (prophetOverlapsPeriod(prophet, period, targetKingdom)) {
+                    if (colStart < 0) colStart = i;
+                    colEnd = i + 1;
+                }
+            });
+            return { colStart, colEnd };
+        }
+        
+        function computeProphetLanes(prophets, periods, targetKingdom) {
+            const placed = prophets.map(p => {
+                const { colStart, colEnd } = computeProphetColumns(p, periods, targetKingdom);
+                return { prophet: p, colStart, colEnd, lane: -1 };
+            }).filter(x => x.colStart >= 0);
+            placed.sort((a, b) => a.colStart - b.colStart);
+            const laneOccupancy = [];
+            placed.forEach(item => {
+                let lane = 0;
+                while (true) {
+                    const overlaps = (laneOccupancy[lane] || []).some(l =>
+                        item.colStart < l.colEnd && item.colEnd > l.colStart);
+                    if (!overlaps) break;
+                    lane++;
+                }
+                item.lane = lane;
+                if (!laneOccupancy[lane]) laneOccupancy[lane] = [];
+                laneOccupancy[lane].push(item);
+            });
+            return placed;
+        }
+        
+        function createProphetBox(prophet, cssClass) {
+            const box = document.createElement('div');
+            box.className = `prophet-box ${cssClass}`;
+            box.innerHTML = `
+                <span class="prophet-box-name">${escapeHtml(prophet.name)}</span>
+                <span class="prophet-box-en">${escapeHtml(prophet.en)}</span>
+            `;
+            return box;
+        }
+        
+        function renderProphetTrack(placed, periods, container, cssClass, reverseRows) {
+            container.innerHTML = '';
+            if (periods.length === 0) return;
+            container.style.gridTemplateColumns = `repeat(${periods.length}, var(--col-width))`;
+            const maxLane = placed.length === 0 ? 0 : Math.max(...placed.map(p => p.lane));
+            container.style.gridTemplateRows = `repeat(${maxLane + 1}, 24px)`;
+            container.style.minHeight = Math.max(32, (maxLane + 1) * 30) + 'px';
+            placed.forEach(({ prophet, colStart, colEnd, lane }) => {
+                const box = createProphetBox(prophet, cssClass);
+                box.style.gridColumn = `${colStart + 1} / ${colEnd + 1}`;
+                box.style.gridRow = reverseRows ? (maxLane + 1 - lane) : (lane + 1);
+                container.appendChild(box);
+            });
+        }
+        
+        function generateTimeline(allPeriods, grid, northProphets, southProphets) {
+            const body = document.getElementById('timeline-body');
+            if (!body) return;
+            body.innerHTML = '';
+            const baseCol = (grid && grid.rows[0]) ? grid.rows[0].length - allPeriods.length : 0;
+            
+            const northPlaced = computeProphetLanes(northProphets || [], allPeriods, 'north');
+            const southPlaced = computeProphetLanes(southProphets || [], allPeriods, 'south');
+            
+            const northTrack = document.createElement('div');
+            northTrack.className = 'prophet-track';
+            renderProphetTrack(northPlaced, allPeriods, northTrack, 'north-prophet', true);
+            body.appendChild(northTrack);
+            
+            const container = document.createElement('div');
+            container.className = 'timeline-container';
+            container.id = 'timeline-container';
+            allPeriods.forEach((period, i) => {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'time-column';
+                const northSection = document.createElement('div');
+                northSection.className = 'kingdom-section';
+                if (period.north) {
+                    northSection.appendChild(createKingBox(period.north, 0, baseCol + i));
+                } else {
+                    const emptyBox = document.createElement('div');
+                    emptyBox.className = 'king-box empty';
+                    emptyBox.innerHTML = (period.south && period.south.start > 735) ? '<div style="color:#999;">（見左欄）</div>' : '<div style="color:#999;">（已滅亡）</div>';
+                    northSection.appendChild(emptyBox);
+                }
+                colDiv.appendChild(northSection);
+                const southSection = document.createElement('div');
+                southSection.className = 'kingdom-section';
+                if (period.south) {
+                    southSection.appendChild(createKingBox(period.south, 1, baseCol + i));
+                } else {
+                    const emptyBox = document.createElement('div');
+                    emptyBox.className = 'king-box empty';
+                    emptyBox.innerHTML = '<div style="color:#999;">（見左欄）</div>';
+                    southSection.appendChild(emptyBox);
+                }
+                colDiv.appendChild(southSection);
+                container.appendChild(colDiv);
+            });
+            body.appendChild(container);
+            
+            const southTrack = document.createElement('div');
+            southTrack.className = 'prophet-track';
+            renderProphetTrack(southPlaced, allPeriods, southTrack, 'south-prophet');
+            body.appendChild(southTrack);
+            
+            requestAnimationFrame(() => syncUnifiedAlignment());
+        }
+        
+        function syncUnifiedAlignment() {
+            const spacer = document.querySelector('.unified-spacer');
+            if (spacer) {
+                spacer.style.height = (window.innerWidth <= 767 ? '190px' : '270px');
+            }
+        }
+        
+        const MAX_EVENTS_IN_BOX = 2;
+        
+        function createKingBox(king, row, col) {
+            const box = document.createElement('div');
+            box.className = `king-box ${king.type}-king`;
+            
+            const years = `${king.start}-${king.end} BC`;
+            const duration = king.start - king.end;
+            
+            const allEvents = king.events;
+            const showInBox = allEvents.slice(0, MAX_EVENTS_IN_BOX);
+            const eventsHTML = showInBox.map(e => `<li>${e}</li>`).join('');
+            
+            box.setAttribute('data-name-zh', king.name);
+            box.setAttribute('data-name-en', king.en);
+            box.setAttribute('data-years', years + '（' + duration + '年）');
+            box.setAttribute('data-events-full', JSON.stringify(allEvents));
+            if (row !== undefined && col !== undefined) {
+                box.setAttribute('data-nav-row', String(row));
+                box.setAttribute('data-nav-col', String(col));
+            }
+            
+            box.innerHTML = `
+                <div class="king-name-zh">${king.name}</div>
+                <div class="king-name-en">${king.en}</div>
+                <div class="king-years">${years}（${duration}年）</div>
+                <ul class="king-events">
+                    ${eventsHTML}
+                </ul>
+            `;
+            
+            return box;
+        }
+        
+        function getYearsLabel(king) {
+            const d = king.start - king.end;
+            return king.start + '-' + king.end + ' BC（' + d + '年）';
+        }
+        
+        function renderModalForKing(king) {
+            const eventsHTML = (king.events || []).map(ev => '<li>' + ev + '</li>').join('');
+            const card = document.getElementById('modal-card');
+            const years = king.yearsLabel || getYearsLabel(king);
+            card.className = 'modal-card ' + (king.type || 'mixed') + '-king';
+            card.innerHTML = `
+                <div class="king-name-zh">${escapeHtml(king.name)}</div>
+                <div class="king-name-en">${escapeHtml(king.en)}</div>
+                <div class="king-years">${escapeHtml(years)}</div>
+                <ul class="king-events">${eventsHTML}</ul>
+            `;
+        }
+        
+        function findValidPosition(r, c, dir) {
+            if (!navGrid || !navGrid.rows) return null;
+            
+            if (r === 0 && c === 1 && dir === 'right') {
+                if (navGrid.rows[1] && navGrid.rows[1][2] !== null) {
+                    return { row: 1, col: 2, king: navGrid.rows[1][2] };
+                }
+            }
+            
+            if (r === 1 && c === 2 && dir === 'left') {
+                if (navGrid.rows[0] && navGrid.rows[0][1] !== null) {
+                    return { row: 0, col: 1, king: navGrid.rows[0][1] };
+                }
+            }
+            
+            if (r === 0 && c === 2 && dir === 'left') {
+                if (navGrid.rows[0] && navGrid.rows[0][1] !== null) {
+                    return { row: 0, col: 1, king: navGrid.rows[0][1] };
+                }
+            }
+            
+            let nr = r, nc = c;
+            const maxSteps = 50;
+            
+            for (let step = 0; step < maxSteps; step++) {
+                if (dir === 'left') nc--;
+                else if (dir === 'right') nc++;
+                else if (dir === 'up') nr--;
+                else if (dir === 'down') nr++;
+                
+                if (nr < 0 || nr >= navGrid.rows.length) return null;
+                const row = navGrid.rows[nr];
+                if (!row || nc < 0 || nc >= row.length) return null;
+                
+                if (row[nc] !== null) {
+                    return { row: nr, col: nc, king: row[nc] };
+                }
+            }
+            
+            return null;
+        }
+        
+        function navigateModal(dir) {
+            const result = findValidPosition(currentNav.row, currentNav.col, dir);
+            if (result) {
+                currentNav.row = result.row;
+                currentNav.col = result.col;
+                renderModalForKing(result.king);
+                updateFocusedBox();
+            }
+        }
+        
+        function updateFocusedBox() {
+            document.querySelectorAll('.king-box.focused').forEach(box => {
+                box.classList.remove('focused');
+            });
+            
+            const boxes = document.querySelectorAll('.king-box[data-nav-row][data-nav-col]');
+            boxes.forEach(box => {
+                const r = parseInt(box.getAttribute('data-nav-row'), 10);
+                const c = parseInt(box.getAttribute('data-nav-col'), 10);
+                if (r === currentNav.row && c === currentNav.col) {
+                    box.classList.add('focused');
+                }
+            });
+        }
+        
+        function openKingModal(e) {
+            const box = e.currentTarget;
+            if (box.classList.contains('empty')) return;
+            const row = box.getAttribute('data-nav-row');
+            const col = box.getAttribute('data-nav-col');
+            if (row !== null && col !== null && navGrid) {
+                currentNav.row = parseInt(row, 10);
+                currentNav.col = parseInt(col, 10);
+            }
+            
+            if (navGrid && navGrid.rows[currentNav.row] && navGrid.rows[currentNav.row][currentNav.col]) {
+                renderModalForKing(navGrid.rows[currentNav.row][currentNav.col]);
+            }
+            
+            document.getElementById('modal-overlay').classList.add('show');
+        }
+        
+        document.getElementById('modal-overlay').addEventListener('click', function(e) {
+            if (e.target === this) this.classList.remove('show');
+        });
+        
+        (function initModalSwipe() {
+            const overlay = document.getElementById('modal-overlay');
+            const card = document.getElementById('modal-card');
+            let touchStart = { x: 0, y: 0 };
+            overlay.addEventListener('touchstart', function(e) {
+                if (!overlay.classList.contains('show') || !navGrid) return;
+                touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            }, { passive: true });
+            overlay.addEventListener('touchmove', function(e) {
+                if (!overlay.classList.contains('show')) return;
+                const dx = e.touches[0].clientX - touchStart.x;
+                const dy = e.touches[0].clientY - touchStart.y;
+                if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+                    e.preventDefault();
+                } else if (Math.abs(dy) > 50 && Math.abs(dy) > Math.abs(dx)) {
+                    const rect = card.getBoundingClientRect();
+                    const headerHeight = 100;
+                    if (touchStart.y < rect.top + headerHeight) {
+                        e.preventDefault();
+                    }
+                }
+            }, { passive: false });
+            overlay.addEventListener('touchend', function(e) {
+                if (!overlay.classList.contains('show') || !navGrid) return;
+                if (!e.changedTouches || !e.changedTouches[0]) return;
+                const dx = e.changedTouches[0].clientX - touchStart.x;
+                const dy = e.changedTouches[0].clientY - touchStart.y;
+                const T = 50;
+                if (Math.abs(dx) > T && Math.abs(dx) > Math.abs(dy)) {
+                    navigateModal(dx > 0 ? 'left' : 'right');
+                } else if (Math.abs(dy) > T && Math.abs(dy) > Math.abs(dx)) {
+                    const rect = card.getBoundingClientRect();
+                    if (touchStart.y < rect.top + 100) {
+                        navigateModal(dy > 0 ? 'down' : 'up');
+                    }
+                }
+            }, { passive: true });
+        })();
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('modal-overlay').classList.remove('show');
+                return;
+            }
+            
+            const overlay = document.getElementById('modal-overlay');
+            
+            if (overlay.classList.contains('show') && navGrid) {
+                const keyMap = { ArrowLeft: 'left', ArrowRight: 'right', ArrowUp: 'up', ArrowDown: 'down' };
+                const dir = keyMap[e.key];
+                if (dir) {
+                    e.preventDefault();
+                    navigateModal(dir);
+                }
+                return;
+            }
+            
+            if (!overlay.classList.contains('show') && navGrid) {
+                const keyMap = { ArrowLeft: 'left', ArrowRight: 'right', ArrowUp: 'up', ArrowDown: 'down' };
+                const dir = keyMap[e.key];
+                
+                if (dir) {
+                    e.preventDefault();
+                    const result = findValidPosition(currentNav.row, currentNav.col, dir);
+                    if (result) {
+                        currentNav.row = result.row;
+                        currentNav.col = result.col;
+                        updateFocusedBox();
+                    }
+                } else if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    if (navGrid.rows[currentNav.row] && navGrid.rows[currentNav.row][currentNav.col]) {
+                        const king = navGrid.rows[currentNav.row][currentNav.col];
+                        renderModalForKing(king);
+                        overlay.classList.add('show');
+                    }
+                }
+            }
+        });
+        
+        document.getElementById('unified-kings').addEventListener('click', function(e) {
+            const box = e.target.closest('.king-box');
+            if (box && !box.classList.contains('empty') && box.getAttribute('data-events-full')) {
+                openKingModal({ currentTarget: box });
+            }
+        });
+        
+        document.getElementById('timeline-body').addEventListener('click', function(e) {
+            const box = e.target.closest('.king-box');
+            if (box && !box.classList.contains('empty') && box.getAttribute('data-events-full')) {
+                openKingModal({ currentTarget: box });
+            }
+        });
+        
+        function renderUnifiedKings(unifiedKings, grid) {
+            const container = document.getElementById('unified-kings');
+            container.innerHTML = '';
+            unifiedKings.forEach(function(king, idx) {
+                container.appendChild(createKingBox(king, 0, idx));
+            });
+        }
+        
+        function computeUnifiedProphetPlacement(prophets, unifiedKings) {
+            const periods = unifiedKings.map(k => ({ north: k, south: null, start: k.start, end: k.end }));
+            return computeProphetLanes(prophets, periods, 'north');
+        }
+        
+        function renderUnifiedProphets(unifiedKings, unifiedProphets) {
+            const container = document.getElementById('unified-prophets');
+            if (!container) return;
+            if (!unifiedProphets || unifiedProphets.length === 0) {
+                container.style.display = 'none';
+                return;
+            }
+            const placed = computeUnifiedProphetPlacement(unifiedProphets, unifiedKings);
+            if (placed.length === 0) {
+                container.style.display = 'none';
+                return;
+            }
+            container.style.display = 'grid';
+            container.style.gap = '6px 24px';
+            container.style.gridTemplateColumns = unifiedKings.map(() => 'var(--col-width)').join(' ');
+            const maxLane = Math.max(0, ...placed.map(p => p.lane));
+            container.style.gridTemplateRows = `repeat(${maxLane + 1}, 24px)`;
+            container.style.minHeight = (maxLane + 1) * 30 + 'px';
+            placed.forEach(({ prophet, colStart, colEnd, lane }) => {
+                const box = createProphetBox(prophet, 'unified-prophet');
+                box.style.gridColumn = `${colStart + 1} / ${colEnd + 1}`;
+                box.style.gridRow = lane + 1;
+                container.appendChild(box);
+            });
+        }
+        
+        (async function loadFromToml() {
+            const el = document.getElementById('unified-kings');
+            try {
+                const { default: J_TOML } = await import('https://esm.sh/@ltd/j-toml@1.38.0');
+                const r = await fetch('./king_list.toml');
+                if (!r.ok) throw new Error('HTTP ' + r.status + '：請確認 king_list.toml 與 index.html 在同一目錄，且用 npx serve 在該目錄執行');
+                const tomlStr = await r.text();
+                const data = J_TOML.parse(tomlStr);
+                const all = (data.king || []).map(kingFromToml);
+                const unifiedKings = all.filter(function(k) { return k && (k.kingdom === 'united'); });
+                const northKings = all.filter(function(k) { return k && (k.kingdom === 'north'); });
+                const southKings = all.filter(function(k) { return k && (k.kingdom === 'south'); });
+                const allPeriods = buildAllPeriods(northKings, southKings);
+                navGrid = buildNavGrid(unifiedKings, allPeriods);
+                renderUnifiedKings(unifiedKings, navGrid);
+                
+                let northProphets = [];
+                let southProphets = [];
+                let unifiedProphets = [];
+                try {
+                    const pr = await fetch('./prophet_list.toml');
+                    if (pr.ok) {
+                        const ptoml = J_TOML.parse(await pr.text());
+                        const prophets = (ptoml.prophet || []).map(p => prophetFromToml(p));
+                        northProphets = prophets.filter(p => p.isNorth);
+                        southProphets = prophets.filter(p => p.isSouth);
+                        unifiedProphets = prophets.filter(p => p.isUnified);
+                    }
+                } catch (e) { console.warn('載入 prophet_list.toml 失敗，略過先知時間線', e); }
+                
+                renderUnifiedProphets(unifiedKings, unifiedProphets);
+                generateTimeline(allPeriods, navGrid, northProphets, southProphets);
+                window.addEventListener('resize', syncUnifiedAlignment);
+                
+                if (navGrid.rows[0] && navGrid.rows[0][0]) {
+                    currentNav.row = 0;
+                    currentNav.col = 0;
+                    updateFocusedBox();
+                }
+            } catch (err) {
+                console.error('載入 king_list.toml 失敗', err);
+                el.innerHTML = '<p style="color:#c00;padding:1em;">載入失敗：' + escapeHtml(err.message) + '</p>';
+            }
+        })();
+    </script>
+</body>
+</html>
