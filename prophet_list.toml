@@ -43,41 +43,6 @@ kingdom = ["north", "south"]
 kings = ["羅波安", "耶羅波安一世"]
 ref = "王上12:22-24; 代下11:2-4, 12:5-8"
 
-[[prophet]]
-name = "耶戶（哈拿尼的兒子）"
-en = "Jehu son of Hanani"
-start = 909
-end = 886
-kingdom = "north"
-kings = ["巴沙"]
-ref = "王上16:1-4, 7"
-
-[[prophet]]
-name = "哈拿尼"
-en = "Hanani"
-start = 910
-end = 869
-kingdom = "south"
-kings = ["亞撒"]
-ref = "代下16:7-9"
-
-[[prophet]]
-name = "亞撒利雅（俄德的兒子）"
-en = "Azariah son of Oded"
-start = 910
-end = 869
-kingdom = "south"
-kings = ["亞撒"]
-ref = "代下15:1-7"
-
-[[prophet]]
-name = "耶戶（先見）"
-en = "Jehu the seer"
-start = 909
-end = 848
-kingdom = ["north", "south"]
-kings = ["巴沙", "約沙法"]
-ref = "王上16:1-4; 代下19:2, 20:34"
 
 [[prophet]]
 name = "以利亞"
@@ -106,43 +71,6 @@ kingdom = "north"
 kings = ["約蘭", "耶戶", "約哈斯", "約阿施"]
 ref = "王上19:19-21; 王下2-9, 13:14-21"
 
-[[prophet]]
-name = "以利以謝"
-en = "Eliezer"
-start = 872
-end = 848
-kingdom = "south"
-kings = ["約沙法"]
-ref = "代下20:37"
-
-[[prophet]]
-name = "亞哈悉"
-en = "Jahaziel"
-start = 872
-end = 848
-kingdom = "south"
-kings = ["約沙法"]
-ref = "代下20:14"
-note = "利未人，神的靈感動他預言"
-
-[[prophet]]
-name = "撒迦利亞（耶何耶大的兒子）"
-en = "Zechariah son of Jehoiada"
-start = 835
-end = 796
-kingdom = "south"
-kings = ["約阿施"]
-ref = "代下24:20-22"
-note = "祭司，被神的靈感動向百姓說預言"
-
-[[prophet]]
-name = "俄德"
-en = "Oded"
-start = 743
-end = 715
-kingdom = "south"
-kings = ["亞哈斯"]
-ref = "代下28:9-11"
 
 [[prophet]]
 name = "約拿"
@@ -207,14 +135,6 @@ kingdom = "south"
 kings = ["約西亞"]
 ref = "番1:1"
 
-[[prophet]]
-name = "戶勒大"
-en = "Huldah"
-start = 640
-end = 609
-kingdom = "south"
-kings = ["約西亞"]
-ref = "王下22:14-20; 代下34:22-28"
 
 [[prophet]]
 name = "耶利米"
@@ -243,3 +163,10 @@ kingdom = "south"
 kings = ["西底家"]
 ref = "俄1:1"
 note = "預言以東的下場，可能於耶路撒冷陷落後寫成"
+
+
+[[prophet]]
+name = "以西結"
+en = "Ezekiel"
+kingdom = "south"
+kings = ["西底家"]

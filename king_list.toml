@@ -6,11 +6,7 @@ start = 1010
 end = 970
 type = "good"
 kingdom = "united"
-
 [king.deeds]
-[[king.deeds.deed]]
-name = "在希伯崙作王7年零6個月，在耶路撒冷作王33年，共40年（代上3:4, 29:27）"
-type = "good"
 [[king.deeds.deed]]
 name = "攻取耶路撒冷錫安保障，命名為「大衛城」（代上11:5, 7）"
 type = "good"
@@ -18,29 +14,39 @@ type = "good"
 name = "將約櫃運往耶路撒冷，過程中烏撒伸手扶櫃被擊殺而一度停放俄別以東家（代上13:1-14）"
 type = "good"
 [[king.deeds.deed]]
-name = "數次擊敗非利士人，制伏摩押、亞蘭、以東等鄰國（代上18:1-13）"
+name = "數次擊敗非利士人，制伏摩押、亞蘭、以東、亞們、亞瑪力、拉巴（代上14:8-16, 18:1-13, 19, 20）"
 type = "good"
 [[king.deeds.deed]]
 name = "有心為神建殿，神因其流人血過多而不許，命所羅門建造（代上17:1-15, 22:8）"
 type = "good"
 [[king.deeds.deed]]
-name = "為聖殿預備極其豐富的金、銀、銅、鐵、木石等材料（代上22:2-4, 29:2-5）"
+name = "為聖殿預備極其豐富的金、銀、銅、鐵、木石等材料（代上22:1-13, 28, 29:1-9）"
 type = "good"
 [[king.deeds.deed]]
-name = "因數點百姓得罪神，引發三日瘟疫，後在阿珥楠禾場築壇獻祭使災止住（代上21:1-27）"
+name = "因數點百姓得罪神，引發三日瘟疫，後在阿珥楠禾場築壇獻祭使災止住（代上21）"
 type = "evil"
+[[king.deeds.deed]]
+name = "因亞多尼雅要篡位，大衛趕緊立所羅門為王（王上1:5-40）"
+type = "good"
+[[king.deeds.deed]]
+name = "大衛臨終囑咐所羅門要遵行神的律法以及其他政治決策（王上2:1-9）"
+type = "good"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
-name = "神指引大衛擊敗非利士人，並在桑林對面預備神軍的腳步聲作為出戰信號（代上14:10-15）"
+name = "以色列長老照著神的應許在希伯崙膏立大衛為王（代上11:1-3）"
+[[king.god_deeds.deed]]
+name = "耶和華使以色列人擊殺非利士人，大獲全勝（代上11:14）"
 [[king.god_deeds.deed]]
 name = "神在烏撒因手扶約櫃被擊殺後，賜福給存放約櫃的俄別以東家（代上13:9-14）"
 [[king.god_deeds.deed]]
-name = "神藉先知拿單傳達「大衛王約」，應許其子孫必建聖殿，且國位必堅定直到永遠（代上17:3-15）"
+name = "神將非利士人交在大衛手中，指示大衛要如何攻打非利士，又使列國都懼怕他（代上14:8-17）"
 [[king.god_deeds.deed]]
-name = "神差遣先見迦得讓大衛在三樣災中選擇，後降瘟疫於以色列，但在大衛謙卑禱告後，神後悔不降災，並差使者吩咐大衛在阿珥楠禾場築壇（代上21:9-18）"
+name = "神藉先知拿單傳達「大衛之約」，應許其子孫必建聖殿，且國位必堅定直到永遠（代上17:3-15）"
 [[king.god_deeds.deed]]
-name = "大衛在阿珥楠禾場獻祭時，神使火從天降在燔祭壇上應允他（代上21:26）"
+name = "神差遣先見迦得讓大衛在三樣災中選擇，後降瘟疫於以色列，但在大衛謙卑禱告後，神後悔不降災（代上21:9-17）"
+[[king.god_deeds.deed]]
+name = "神差使者吩咐大衛在阿珥楠禾場築壇，大衛在禾場獻祭時，神使火從天降在燔祭壇上應允他（代上21:18-31）"
 [[king.god_deeds.deed]]
 name = "神親手劃出聖殿的樣式，使大衛明白如何指示所羅門建造（代上28:19）"
 
@@ -52,7 +58,7 @@ name = "非利士人兩次在利乏音谷安營尋索大衛，最終被大衛擊
 [[king.other_events.event]]
 name = "摩押被大衛征服，成為大衛的僕人，並向他進貢（代上18:2）"
 [[king.other_events.event]]
-name = "瑣巴王哈大利謝與大衛爭戰，大衛奪了他的戰車與馬匹（代上18:3-4）"
+name = "瑣巴王哈大利謝與大衛爭戰，大衛奪了他的戰車、馬匹、步兵（代上18:3-4）"
 [[king.other_events.event]]
 name = "大馬士革的亞蘭人前來幫助瑣巴王，被大衛殺死二萬二千人，隨後歸服進貢（代上18:5-6）"
 [[king.other_events.event]]
@@ -60,7 +66,7 @@ name = "哈馬王陀烏因大衛擊敗其仇敵哈大利謝，差遣兒子哈多
 [[king.other_events.event]]
 name = "亞捫王哈嫩受首領聳動，凌辱大衛派去弔喪的臣僕，剃去他們一半鬍鬚並割斷衣服（代上19:1-4）"
 [[king.other_events.event]]
-name = "亞捫拿一千他連得銀子從美索不達米亞、亞蘭雇傭戰車馬兵對抗大衛（代上19:6-7）"
+name = "亞捫拿一千他連得銀子從美索不達米亞、亞蘭、瑪迦、瑣巴雇傭戰車馬兵對抗大衛（代上19:6-7）"
 [[king.other_events.event]]
 name = "埃及法老為逃亡的以東王後裔哈達提供食物、房屋與田地，甚至將王后的妹子賜他為妻（王上11:18-19）"
 
@@ -74,32 +80,66 @@ kingdom = "united"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "在基遍向神求智慧以判斷民事，蒙神應允並獲賜富足與尊榮（王上3:5-13, 代下1:7-12）"
+name = "治死亞多尼雅，革除祭司亞比亞他，殺死約押；立比拿雅作元帥，立撒督作祭司（王上2:13-35）"
 type = "good"
 [[king.deeds.deed]]
-name = "耗時7年建成耶和華的聖殿，13年建造自己的宮室（王上6:38, 7:1）"
+name = "限制示每居住在耶路撒冷，但他違反規定，所羅門吩咐比拿雅治死他（王上2:36-46）"
 type = "good"
 [[king.deeds.deed]]
-name = "作箴言三千句、詩歌一千零五首，示巴女王慕名而來試問（王上4:32, 10:1-3）"
-type = "good"
-[[king.deeds.deed]]
-name = "晚年寵愛外邦妃嬪，心偏離耶和華去事奉別神，引發神的憤怒（王上11:1-10）"
+name = "娶了埃及王法老的女兒（王上3:1）"
 type = "evil"
 [[king.deeds.deed]]
-name = "神興起哈達、利遜與耶羅波安作為他的敵人（王上11:14, 23, 26）"
+name = "在基遍向神求智慧以判斷民事，蒙神應允並獲賜富足與尊榮（王上3:5-14, 代下1:7-12）"
+type = "good"
+[[king.deeds.deed]]
+name = "有智慧斷案，找到孩子的親生母親（王上3:16-28）"
+type = "good"
+[[king.deeds.deed]]
+name = "作箴言三千句、詩歌一千零五首（王上4:32）"
+type = "good"
+[[king.deeds.deed]]
+name = "耗時 7 年建成耶和華的聖殿（王上6:38，代下3）"
+type = "good"
+[[king.deeds.deed]]
+name = "耗時 13 年建成自己的宮室（王上7:1）"
 type = "evil"
+[[king.deeds.deed]]
+name = "差遣人去推羅召來戶蘭，製作聖殿的各樣設備（王上7:13-51，代下2:7-14,4）"
+type = "good"
+[[king.deeds.deed]]
+name = "將約櫃從大衛城運進聖殿，神的榮光充滿這殿（王上8:1-11，代下5:2-14）"
+type = "good"
+[[king.deeds.deed]]
+name = "王和眾人在神面前奉獻聖殿，甚至因銅壇太小、容不下脂油，而將殿前院子分別為聖來獻祭（王上8:62-64，代下7:1-10）"
+type = "good"
+[[king.deeds.deed]]
+name = "把加利利的二十座城給推羅王希蘭（王上8:10-13）"
+type = "evil"
+[[king.deeds.deed]]
+name = "所羅門挑取不能滅盡、外邦人的後裔作服苦的奴僕，不過不讓以色列人當奴僕（王上9:20-22，代下8:7-9）"
+type = "evil"
+[[king.deeds.deed]]
+name = "寵愛外邦妃嬪，心偏離耶和華去事奉別神，引發神的憤怒（王上11:1-13）"
+type = "evil"
+
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
-name = "神在基遍夢中向所羅門顯現，賜予他前無古人、後無來者的智慧，以及富足與尊榮（王上3:5-13，代下1:7-12）"
+name = "神使所羅門在以色列眾人眼前甚為尊大、極其威嚴，勝過他以前的以色列王。（代上29:25）"
+[[king.god_deeds.deed]]
+name = "神在基遍在夢中向所羅門顯現，賜予他前無古人、後無來者的智慧，以及富足與尊榮。並且告訴他，若效法他父親大衛遵行神的道，神會使他長壽。（王上3:5-14，代下1:7-12）"
+[[king.god_deeds.deed]]
+name = "神告訴所羅門，若他遵行神的律例、遵從神的誡命，上帝就會應驗祂向大衛的應許，必住在以色列人中間，不丟棄以色列民（王上 6:11-13）"
 [[king.god_deeds.deed]]
 name = "聖殿完工運入約櫃時，神的榮光充滿殿中，使祭司不能站立供職（王上8:10-11，代下5:13-14）"
 [[king.god_deeds.deed]]
-name = "所羅門禱告後，神使火從天降下燒盡燔祭，神的榮光再次充滿殿宇（代下7:1）"
+name = "所羅門禱告後，神使火從天降下燒盡燔祭，神的榮光再次充滿殿宇，祭司甚至不能進殿（代下7:1-2）"
 [[king.god_deeds.deed]]
 name = "神二次向所羅門顯現，應許若遵守律法必堅固國位，若離棄神則必剪除以色列人（王上9:2-9，代下7:12-22）"
 [[king.god_deeds.deed]]
-name = "神因所羅門晚年背離，興起敵人哈達、利遜與耶羅波安（王上11:14, 23, 26）"
+name = "神因所羅門晚年背離，向他發怒，說必將他的國奪回，賜給他的臣子。但因大衛的緣故，這事要在他兒子手中發生，並且要留一個支派給他的兒子（王上11:9-13)"
+[[king.god_deeds.deed]]
+name = "神興起哈達、利遜作為所羅門的敵人（王上11:14, 23）"
 [[king.god_deeds.deed]]
 name = "神藉先知亞希雅將新衣撕成十二片，預言國度將分裂，並將十個支派賜給耶羅波安（王上11:29-39）"
 
@@ -107,15 +147,17 @@ name = "神藉先知亞希雅將新衣撕成十二片，預言國度將分裂，
 [[king.other_events.event]]
 name = "埃及法老將女兒嫁給所羅門，並攻取基色城作為女兒的妝奩（王上3:1, 9:16）"
 [[king.other_events.event]]
-name = "晚年埃及王示撒收留逃亡的耶羅波安（王上11:40）"
+name = "所羅門在世的日子，從大河到非利士地，這些國都進貢服事他（王上4:21）"
 [[king.other_events.event]]
-name = "推羅王希蘭與所羅門立約，提供建殿所需的香柏木、松木及金子，並派遣巧匠戶蘭協助工事（王上5:1-12, 9:11, 代下2:3-16）"
+name = "推羅王希蘭與所羅門立約，提供建殿所需的香柏木、松木、檀香木，並派遣巧匠戶蘭協助工事（王上5:1-12, 7:13-45, 9:11, 代下2:3-16, 3:15-4:17）"
 [[king.other_events.event]]
 name = "示巴女王慕名而來，用難解的話試問所羅門，並贈送極多金子、寶石與香料（王上10:1-10, 代下9:1-9）"
 [[king.other_events.event]]
-name = "亞蘭的利遜在大馬士革做王，成為以色列的敵人（王上11:23-25）"
-[[king.other_events.event]]
 name = "普天下的王都求見所羅門要聽其智慧，每年各帶金器、銀器、軍械等貢物而來（王上10:24-25, 代下9:23-24）"
+[[king.other_events.event]]
+name = "以東人哈達興起，亞蘭的利遜在大馬士革做王，成為以色列的敵人（王上11:14, 23-25）"
+[[king.other_events.event]]
+name = "晚年埃及王示撒收留逃亡的耶羅波安（王上11:40）"
 
 # 北國以色列
 [[king]]
@@ -309,7 +351,7 @@ name = "約蘭"
 en = "Joram"
 start = 852
 end = 841
-type = "mixed"
+type = "evil"
 kingdom = "north"
 
 [king.deeds]
@@ -394,7 +436,7 @@ name = "約阿施"
 en = "Jehoash"
 start = 798
 end = 782
-type = "mixed"
+type = "evil"
 kingdom = "north"
 
 [king.deeds]
@@ -418,7 +460,7 @@ name = "耶羅波安二世"
 en = "Jeroboam II"
 start = 793
 end = 753
-type = "mixed"
+type = "evil"
 kingdom = "north"
 
 [king.deeds]
@@ -569,7 +611,7 @@ name = "亞比央"
 en = "Abijah"
 start = 913
 end = 910
-type = "mixed"
+type = "evil"
 kingdom = "south"
 
 [king.deeds]
@@ -721,7 +763,7 @@ name = "約阿施"
 en = "Joash"
 start = 835
 end = 796
-type = "mixed"
+type = "good"
 kingdom = "south"
 
 [king.deeds]
@@ -745,7 +787,7 @@ name = "亞瑪謝"
 en = "Amaziah"
 start = 796
 end = 767
-type = "mixed"
+type = "good"
 kingdom = "south"
 
 [king.deeds]
@@ -771,7 +813,7 @@ name = "烏西雅"
 en = "Uzziah"
 start = 792
 end = 740
-type = "mixed"
+type = "good"
 kingdom = "south"
 
 [king.deeds]
@@ -889,7 +931,7 @@ name = "瑪拿西"
 en = "Manasseh"
 start = 697
 end = 642
-type = "mixed"
+type = "evil"
 kingdom = "south"
 
 [king.deeds]
