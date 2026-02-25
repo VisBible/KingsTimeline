@@ -394,6 +394,11 @@
             font-weight: bold;
         }
         
+        .mixed-deed {
+            color: #757575;
+            font-weight: bold;
+        }
+        
         .god-deed {
             color: #1976d2;
             font-weight: bold;
@@ -683,7 +688,9 @@
             const events = [];
             const deeds = (t.deeds && t.deeds.deed) ? (Array.isArray(t.deeds.deed) ? t.deeds.deed : [t.deeds.deed]) : [];
             deeds.forEach(function(d) {
-                const cls = (d.type === 'good') ? 'good-deed' : 'evil-deed';
+                let cls = 'evil-deed';
+                if (d.type === 'good') cls = 'good-deed';
+                else if (d.type === 'Mixed' || d.type === 'mixed') cls = 'mixed-deed';
                 events.push('<span class="' + cls + '">' + escapeHtml(d.name) + '</span>');
             });
             const godDeeds = (t.god_deeds && t.god_deeds.deed) ? (Array.isArray(t.god_deeds.deed) ? t.god_deeds.deed : [t.god_deeds.deed]) : [];

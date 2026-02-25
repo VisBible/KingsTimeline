@@ -119,6 +119,15 @@ type = "evil"
 name = "所羅門挑取不能滅盡、外邦人的後裔作服苦的奴僕，不過不讓以色列人當奴僕（王上9:20-22，代下8:7-9）"
 type = "evil"
 [[king.deeds.deed]]
+name = "所羅門用金子錘出擋牌、盾牌，並且用象牙製造寶座。宮裡所有的器皿都是精金的。（王上10:16-21）"
+type = "evil"
+[[king.deeds.deed]]
+name = "所羅門拿希蘭回送（退貨）的那些城邑，使以色列人居住在那裡；他又在各地建造了積貨城（代下 8:2-6）。"
+type = "mixed"
+[[king.deeds.deed]]
+name = "所羅門將法老的女兒帶出大衛城，到為她建造的宮裡（王上9:24, 代下8:11）"
+type = "evil"
+[[king.deeds.deed]]
 name = "寵愛外邦妃嬪，心偏離耶和華去事奉別神，引發神的憤怒（王上11:1-13）"
 type = "evil"
 
@@ -170,10 +179,13 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "帶領十個支派背叛大衛家，分裂王國（王上12:16-20）"
+name = "帶領十個支派背叛大衛家，分裂王國（王上12:16-20, 代下10:16）"
 type = "evil"
 [[king.deeds.deed]]
-name = "鑄造兩隻金牛犢安置在伯特利和但，立凡民為祭司，陷民於罪中（王上12:28-31, 代下11:15）"
+name = "建築示劍和毗努伊勒（王上12:25）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "鑄造兩隻金牛犢安置在伯特利和但，立凡民（非利未人）為祭司，私定節期、建殿、自行獻祭，陷民於罪中（王上12:26-35, 代下11:15）"
 type = "evil"
 [[king.deeds.deed]]
 name = "在祭壇旁伸手要拿住神人，手便枯乾，後經神人禱告才復原（王上13:4-6）"
@@ -181,13 +193,10 @@ type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
-name = "神差遣神人從猶大到伯特利，預言大衛家必生約西亞王來毀滅偶像壇，並使王枯乾的手復原（王上13:1-6）"
+name = "神差遣神人從猶大到伯特利，預言大衛家必生約西亞王來毀滅偶像的祭司和壇，並使王枯乾的手復原（王上13:1-6）"
 [[king.god_deeds.deed]]
-name = "神藉先知亞希雅預言耶羅波安家男丁必被剪除，且其子必死（王上14:7-12）"
+name = "神藉先知亞希雅預言耶羅波安家男丁必被剪除，且其子必死，果真應驗（王上14:7-17）"
 
-[king.other_events]
-[[king.other_events.event]]
-name = "埃及王示撒曾在所羅門晚年收留耶羅波安（王上12:2）"
 
 [[king]]
 name = "拿答"
@@ -199,16 +208,13 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "行惡，效法其父。在圍困基比頓時被巴沙背叛殺害（王上15:26-27）"
+name = "行惡，效法其父。在圍困非利士的基比頓時被巴沙背叛殺害（王上15:26-27）"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神應驗藉亞希雅所說的話，使巴沙篡位並滅耶羅波安全家（王上15:29）"
 
-[king.other_events]
-[[king.other_events.event]]
-name = "在基比頓與非利士人對峙（王上15:27）"
 
 [[king]]
 name = "巴沙"
@@ -241,6 +247,9 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
+name = "和他父親一樣拜偶像（王上16:13）"
+type = "evil"
+[[king.deeds.deed]]
 name = "在臣子家喝醉時被心利所殺（王上16:9-10）"
 type = "evil"
 
@@ -258,7 +267,10 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "篡位後殺盡巴沙全家，僅作王7日，見城被圍便自焚而死（王上16:11, 15, 18）"
+name = "篡位後殺盡巴沙全家，僅作王7日，見城被圍便自焚而死（王上16:11, 15-18）"
+type = "evil"
+[[king.deeds.deed]]
+name = "行耶羅波安所行的那罪（王上16:19）"
 type = "evil"
 
 [[king]]
@@ -271,10 +283,10 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "平定內亂後作王，買下撒馬利亞山建城作為首都（王上16:23-24）"
-type = "good"
+name = "買下撒馬利亞山建城作為首都（王上16:24）"
+type = "mixed"
 [[king.deeds.deed]]
-name = "行惡比以前的王更甚"
+name = "行惡比以前的王更甚（王上16:25-26）"
 type = "evil"
 
 [[king]]
@@ -287,16 +299,22 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "娶耶洗別，引進巴力崇拜，作惡勝過以前的王（王上16:30-33）"
+name = "娶西頓王的女兒耶洗別為妻，引進巴力崇拜，為之建廟築壇，作惡勝過以前的王（王上16:30-33）"
 type = "evil"
 [[king.deeds.deed]]
-name = "與先知以利亞經歷迦密山試驗（王上18:20-40）"
-type = "good"
+name = "其妻耶洗別殺耶和華眾先知（王上18:4）"
+type = "evil"
+[[king.deeds.deed]]
+name = "與先知以利亞經歷迦密山試驗（王上18:16-46）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "私自放掉亞蘭王便哈達，並且與他立約（王上20:34）"
+type = "evil"
 [[king.deeds.deed]]
 name = "貪謀拿伯的葡萄園而殺害拿伯（王上21:1-16）"
 type = "evil"
 [[king.deeds.deed]]
-name = "在與亞蘭人的基列拉末戰爭中中箭身亡（王上22:34-37）"
+name = "找猶大王約沙法一起去打基列的拉末，不聽先知米該雅的警告，在戰爭中中箭身亡（王上22:4-37）"
 type = "evil"
 
 [king.god_deeds]
@@ -305,9 +323,9 @@ name = "神藉以利亞預言旱荒（王上17:1）"
 [[king.god_deeds.deed]]
 name = "神在基立溪旁供養以利亞，並藉他的手使撒勒法寡婦的麵與油不短缺，且使其子復活（王上17:2-24）"
 [[king.god_deeds.deed]]
-name = "神在迦密山降火顯應，證明祂是神，隨後降下大雨結束旱災（王上18:36-45）"
+name = "神在迦密山降火顯應，證明祂是神，隨後降下大雨結束旱災（王上18:36-46）"
 [[king.god_deeds.deed]]
-name = "神在何烈山以微小的聲音向以利亞顯現，並命他膏立新王與先知（王上19:9-18）"
+name = "神在何烈山以微小的聲音向以利亞顯現，並命他膏立哈薛為亞蘭王、耶戶為以色列新王、膏以利沙為先知（王上19:9-18）"
 [[king.god_deeds.deed]]
 name = "神藉先知指點亞哈擊敗亞蘭王便哈達，並因亞哈私放敵王而預言亞哈必賠命（王上20:13-42）"
 [[king.god_deeds.deed]]
@@ -317,7 +335,7 @@ name = "神差遣「謊言的靈」入先知口中引誘亞哈陣亡，並藉米
 
 [king.other_events]
 [[king.other_events.event]]
-name = "西頓王謁巴力將女兒耶洗別嫁給亞哈（王上16:31）"
+name = "西頓王將女兒耶洗別嫁給亞哈（王上16:31）"
 [[king.other_events.event]]
 name = "亞蘭王便哈達率領三十二個王圍攻撒馬利亞，索要金銀、妻子、兒女（王上20:1-6）"
 [[king.other_events.event]]
@@ -590,24 +608,39 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "不聽老年人諫言導致王國分裂（王上12:13-16, 代下10:13-16）"
+name = "不聽老年人諫言導致王國分裂（王上12:1-20, 代下10）"
 type = "evil"
 [[king.deeds.deed]]
-name = "在強盛後離棄律法，引發埃及王示撒進攻並奪走殿中寶物（王上14:25-26, 代下12:1, 9）"
+name = "原先招聚猶大和便雅憫支派，想要奪回以色列，但被神阻止（王上12:21-24, 代下11:1-4）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "築壇、立柱像和木偶，國中也有孌童（王上14:23）"
+type = "evil"
+[[king.deeds.deed]]
+name = "因為所羅門製造的金盾牌被埃及王示撒奪走了，羅波安王又製造銅盾牌代替金盾牌（王上14:25-26, 代下12:9-11）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "羅波安在猶大地修築各個城邑，又堅固各處的保障，設立軍長，預備食物、盾牌和槍（代下11:5-12）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "生了許多兒子，將眾子分散在猶大和便雅憫全地，又賜給他們許多糧食，為他們多尋妻子（代下11:21-23）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "強盛的時候，就離棄神的律法，以色列人也都隨從他（代下12:1）"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉神人示瑪雅禁止羅波安與北國交戰（王上12:22-24，代下11:2-4）"
 [[king.god_deeds.deed]]
-name = "神藉示瑪雅說明埃及王侵略是因民離棄神，因王自卑，神使其略得拯救（代下12:5-8）"
+name = "神藉示瑪雅說明埃及王侵略是因民離棄神，因王自卑，神使其略得拯救（代下12:5-12）"
 
 [king.other_events]
 [[king.other_events.event]]
-name = "埃及王示撒率領大軍（一千二百輛戰車、六萬馬兵及無數路比、蘇基、古實人）攻取猶大堅固城，並奪走聖殿與王宮寶物（王上14:25-26, 代下12:2-4, 9）"
+name = "埃及王示撒率領大軍攻取猶大堅固城，並奪走聖殿與王宮寶物（王上14:25-26, 代下12:2-4, 9）"
 
 [[king]]
-name = "亞比央"
+name = "亞比央 / 亞比雅"
 en = "Abijah"
 start = 913
 end = 910
@@ -616,15 +649,16 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "常與耶羅波安爭戰，因倚靠神在一次戰役中殺死以色列精兵50萬（代下13:2, 15-18）"
-type = "good"
-[[king.deeds.deed]]
-name = "仍行耶羅波安之惡"
+name = "仍行耶羅波安之惡（王上15:3）"
 type = "evil"
+[[king.deeds.deed]]
+name = "常與耶羅波安爭戰，因倚靠神在一次戰役中以 40 萬大軍殺死以色列精兵 50 萬，並且攻取他幾座城（王上15:6-7, 代下13:2, 2-20）"
+type = "good"
+
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
-name = "神因亞比雅倚靠祂，使猶大人在戰場大勝耶羅波安（代下13:15-18）"
+name = "神因亞比雅倚靠祂，使猶大人在戰場大勝耶羅波安（代下13:4-18）"
 
 [[king]]
 name = "亞撒"
@@ -636,13 +670,31 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "效法大衛行正事，除去偶像，並貶了拜偶像之祖母的太后位（王上15:11-13, 代下14:2-3, 15:16）"
+name = "效法大衛行正事，除去偶像、孌童，並貶了拜偶像之祖母的太后位（王上15:11-13, 代下14:2-3, 15:16）"
 type = "good"
 [[king.deeds.deed]]
-name = "呼求神擊敗古實王謝拉的百萬大軍（代下14:9-12）"
+name = "將他父親和自己所分別為聖的金銀與器皿，都奉到耶和華的殿裡（王上15:15, 代下15:18）"
 type = "good"
 [[king.deeds.deed]]
-name = "晚年因仰賴亞蘭王而非神受責，將先見哈拿尼囚在監裡（代下16:7-10）"
+name = "尋求神的心意，修築城邑（代下14:7）"
+type = "good"
+[[king.deeds.deed]]
+name = "呼求神擊敗古實王謝拉的百萬大軍（代下14:9-15）"
+type = "good"
+[[king.deeds.deed]]
+name = "亞撒因順服亞撒利雅的預言，就在猶大、便雅憫全地，以及奪來的各城，除掉各樣的偶像，並修築耶和華的殿（代下15:15）"
+type = "good"
+[[king.deeds.deed]]
+name = "向神獻祭，盡心、盡意、尋求神（代下15:10-15）"
+type = "good"
+[[king.deeds.deed]]
+name = "晚年賄賂亞蘭王便哈達，要求對方與以色列王巴沙毀約。事成之後，將巴沙修築拉瑪所用的石頭都搬到南國，用來修築加巴和米斯巴（王上15:18-22, 代下16:1-6）"
+type = "evil"
+[[king.deeds.deed]]
+name = "因仰賴亞蘭王而非神受責，惱怒之下將先見哈拿尼囚在監裡，同時也虐待人民（代下16:7-10）"
+type = "evil"
+[[king.deeds.deed]]
+name = "晚年有腳病，病中不求助神，只求助醫生（代下16:12）"
 type = "evil"
 
 [king.god_deeds]
@@ -657,7 +709,7 @@ name = "先見哈拿尼責備亞撒仰賴亞蘭王而未仰賴神（代下16:7-9
 [[king.other_events.event]]
 name = "古實王謝拉率領百萬大軍、戰車三百輛侵略猶大，在瑪利沙被亞撒擊敗（代下14:9-13）"
 [[king.other_events.event]]
-name = "亞蘭王便哈達受金銀賄賂，攻擊北國以色列以解猶大之圍（王上15:18-20, 代下16:2-4）"
+name = "因以色列王巴沙常與南國征戰，不許人從猶大王那裡出入，受亞撒賄賂的亞蘭王便哈達攻擊北國以色列以解猶大之圍（王上15:18-20, 代下16:2-4）"
 
 [[king]]
 name = "約沙法"
