@@ -428,7 +428,10 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "受膏後擊殺約蘭、亞哈全家及耶洗別，並計殺所有事奉巴力的人（王下9:24, 33, 10:11, 25）"
+name = "受膏後擊殺約蘭、耶洗別、亞哈全家及其大臣，密友、祭司，也殺了猶大王亞哈謝及其眾首領和眾姪子，並且在往撒馬利亞的路上殺了亞哈謝的弟兄（王下9:15-33, 10:1-17, 代下22:8-9）"
+type = "good"
+[[king.deeds.deed]]
+name = "設計謀殺了拜巴力者，並拆毀了巴力廟作為廁所（王下10:18-25）"
 type = "good"
 [[king.deeds.deed]]
 name = "雖滅了巴力，卻仍拜金牛犢，未盡心遵守律法（王下10:29, 31）"
@@ -436,13 +439,16 @@ type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
-name = "神差以利沙的徒弟膏耶戶，並命其滅盡亞哈家，申冤報仇（王下9:1-10）"
+name = "神差以利沙的徒弟膏耶戶，並命其滅盡亞哈家，為眾先知申冤報仇（王下9:1-10）"
+
 [[king.god_deeds.deed]]
 name = "神應許耶戶的子孫必坐國位直到四代（王下10:30）"
+[[king.god_deeds.deed]]
+name = "神割裂以色列國，使外邦攻擊以色列境內（王下10:32）"
 
 [king.other_events]
 [[king.other_events.event]]
-name = "亞蘭王哈薛攻擊以色列境界，奪取約旦河東基列全地（王下10:32-33）"
+name = "亞蘭王哈薛攻擊以色列境界（王下10:32-33）"
 
 [[king]]
 name = "約哈斯"
@@ -454,16 +460,24 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "因行惡常被亞蘭王欺壓，求告神後蒙賜拯救者（王下13:2-5）"
+name = "行神眼中看為惡的事，拜金牛犢（王下10:2）"
+type = "evil"
+[[king.deeds.deed]]
+name = "因常被亞蘭王欺壓，求告神後蒙賜拯救者（王下13:4-5）"
+type = "evil"
+[[king.deeds.deed]]
+name = "雖獲賜拯救者仍不悔改，甚至還在撒馬利亞留下偶像（王下13:6）"
 type = "evil"
 
 [king.god_deeds]
+[[king.god_deeds.deed]]
+name = "因王拜金牛犢，神屢次將以色列交在亞蘭王哈薛和他兒子便哈達手裡（王下13:3）"
 [[king.god_deeds.deed]]
 name = "神應允約哈斯的哀求，賜下一位拯救者使以色列人脫離亞蘭人的手（王下13:4-5）"
 
 [king.other_events]
 [[king.other_events.event]]
-name = "亞蘭王哈薛及其子便哈達屢次欺壓、毀滅以色列，踐踏百姓如塵沙（王下13:3, 7, 22）"
+name = "亞蘭王哈薛及其子便哈達屢次欺壓以色列，只留給約哈斯 50 名馬兵、10 輛戰車、1 萬步兵（王下13:3, 7）"
 
 [[king]]
 name = "約阿施"
@@ -475,15 +489,23 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "三次打敗亞蘭王便哈達，收回失地（王下13:25）"
-type = "good"
-[[king.deeds.deed]]
-name = "在伯示麥之戰打敗猶大王亞瑪謝，並拆毀耶路撒冷城牆（王下14:11-13）"
+name = "行神眼中看為惡的事，依然像耶羅波安一樣去拜金牛犢（王下13:11）"
 type = "evil"
+[[king.deeds.deed]]
+name = "去探訪臨終的以利沙，因只拿箭打地三次被以利沙責備（王下13:14-19）"
+type = "evil"
+[[king.deeds.deed]]
+name = "三次打敗亞蘭王便哈達，收回失地（王下13:25）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "在伯示麥之戰打敗猶大王亞瑪謝，並拆毀耶路撒冷城牆，又帶走神殿裡的金銀和器皿，還帶人為質。（王下14:11-14）"
+type = "mixed"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉病重的以利沙預言王必三次打敗亞蘭人，並在王死後藉以利沙的骸骨使死人復活（王下13:14-21）"
+[[king.god_deeds.deed]]
+name = "神因與亞伯拉罕、以撒、雅各所立的約，仍施恩給以色列人，憐憫他們，眷顧他們，不肯滅盡他們（王下13:23）"
 
 [king.other_events]
 [[king.other_events.event]]
@@ -855,8 +877,14 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "剿滅猶大王室自立為女王，後被祭司耶何耶大策劃推翻並處死（王下11:1, 16, 代下22:10, 23:15）"
+name = "亞她利雅為亞哈謝的母親，見其兒被耶戶殺死，起來剿滅猶大王室自立為王，後被祭司耶何耶大策劃推翻並處死（王下11:1-16, 代下22:10-23:15）"
 type = "evil"
+
+[king.god_deeds]
+[[king.god_deeds.deed]]
+name = "亞哈謝的妹妹、祭司耶和耶大的妻約示巴，將亞哈謝的兒子約阿施從被殺的王子中偷出來，並且把約阿施和他的乳母藏在神的殿裡六年（王下11:2-3, 代下22:11-12）"
+[[king.god_deeds.deed]]
+name = "祭司耶何耶大使王與民與神立約，做上帝的民，又使王與民立約，因此，國民拆毀了巴力廟，打碎壇和像，又把巴力的祭司殺了（王下11:17-18, 代下23:16-17）"
 
 [[king]]
 name = "約阿施"
@@ -868,19 +896,31 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "7歲登基，在祭司教訓下修理聖殿（王下12:1-12, 代下24:1-13）"
+name = "在祭司耶何耶大還在世時，行神眼中看為正的事（王下12:2, 代下24:1-13）"
 type = "good"
 [[king.deeds.deed]]
-name = "在耶何耶大死後離棄神，殺害先知撒迦利雅，最後被臣僕所弒（代下24:17-22, 25）"
+name = "修理聖殿（王下12:4-16, 代下24:4-14）"
+type = "good"
+[[king.deeds.deed]]
+name = "在耶何耶大死後離棄神，聽從拜偶像之猶大首領的意見（代下24:17-18）"
+type = "evil"
+[[king.deeds.deed]]
+name = "殺害耶和耶大的兒子先知撒迦利亞，最後被臣僕所弒（王下12:20, 代下24:21-22, 25）"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
-name = "神的靈感動祭司耶何耶大的兒子撒迦利雅責備民違背誡命，王卻將他殺害（代下24:20-22）"
+name = "神差遣先知，引導猶大王及其臣僕歸回耶和華（代下24:19）"
+[[king.god_deeds.deed]]
+name = "神的靈感動祭司耶何耶大的兒子撒迦利亞責備民違背誡命，王卻將他殺害（代下24:20-22）"
+[[king.god_deeds.deed]]
+name = "在亞蘭攻打約阿施時，神將猶大人交在亞蘭人手裡，為要懲罰猶大人離棄神（代下24:23-24）"
 
 [king.other_events]
 [[king.other_events.event]]
-name = "亞蘭王哈薛攻取迦特，後因約阿施將聖物與金子奉送而撤離耶路撒冷（王下12:17-18）"
+name = "亞蘭王哈薛攻取迦特後打算來攻打耶路撒冷，後因約阿施將聖物與金子奉送而不來攻打（王下12:17-18）"
+[[king.other_events.event]]
+name = "撒迦利亞死後一年，亞蘭的軍兵來攻打約阿施，殺了民眾的眾首領，將財貨送給大馬士革王（代下24:23-24）"
 
 [[king]]
 name = "亞瑪謝"
@@ -892,11 +932,24 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "在鹽谷擊敗以東，卻帶回其神像叩拜（代下25:11, 14）"
+name = "行神眼中看為正的事，不過心不專一（王下14:3）"
+type = "good"
+[[king.deeds.deed]]
+name = "殺了殺他父王的臣僕，按摩西律法書上的命令，沒有治死殺王之人的兒子（王下14:5-6, 代下25:3-4）"
+type = "good"
+[[king.deeds.deed]]
+name = "聽從神人的建議，辭退軍兵裡的以色列人，在鹽谷擊敗以東（王下14:7, 代下25:11）"
+type = "good"
+[[king.deeds.deed]]
+name = "殺了以東人後，把神像帶回來立為自己的神（代下25:14）"
 type = "evil"
 [[king.deeds.deed]]
-name = "向以色列王約阿施索戰慘敗，耶路撒冷城牆被拆，最後被叛黨殺害（王下14:11-19, 代下25:21-27）"
+name = "拒絕先知的提醒（代下25:16）"
 type = "evil"
+[[king.deeds.deed]]
+name = "主動向北國以色列王約阿施挑起戰爭，卻被打敗，導致耶路撒冷城牆被拆，神殿裡的金銀和器皿被奪走，也被帶走人質（王下14:8-14, 代下25:17-24）"
+type = "evil"
+
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
@@ -906,7 +959,7 @@ name = "神差先知責備亞瑪謝拜以東神像，並預言神定意要滅他
 
 [king.other_events]
 [[king.other_events.event]]
-name = "在鹽谷擊殺以東一萬人，攻取西拉城（王下14:7, 代下25:11）"
+name = "以東在鹽谷被亞瑪謝擊殺一萬人，西拉城被攻取（王下14:7, 代下25:11）"
 
 [[king]]
 name = "烏西雅"
