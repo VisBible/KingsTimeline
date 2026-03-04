@@ -521,19 +521,17 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "收回以色列邊界之地，拯救艱苦中的以色列民（王下14:25-27）"
-type = "good"
-[[king.deeds.deed]]
-name = "仍行耶羅波安的罪"
+name = "行神眼中看為惡的事，仍行耶羅波安的罪（王下14:24）"
 type = "evil"
+[[king.deeds.deed]]
+name = "收回邊界之地（王下14:25-28）"
+type = "mixed"
+
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神憐憫以色列人的艱苦，藉先知約拿預言王必收回邊界之地（王下14:25-27）"
 
-[king.other_events]
-[[king.other_events.event]]
-name = "以色列收回了先前屬猶大的大馬士革和哈馬歸以色列（王下14:28）"
 
 [[king]]
 name = "撒迦利雅"
@@ -545,7 +543,7 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "僅作王6個月，被沙龍當眾殺害（王下15:8, 10）"
+name = "行神眼中看為惡的事，和耶羅波安一樣，拜金牛犢（王下15:9）"
 type = "evil"
 
 [king.god_deeds]
@@ -562,7 +560,7 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "僅作王1個月，被米拿現殺害（王下15:13-14）"
+name = "殺害撒迦利雅，篡位作王（王下15:10）"
 type = "evil"
 
 [[king]]
@@ -574,6 +572,12 @@ type = "evil"
 kingdom = "north"
 
 [king.deeds]
+[[king.deeds.deed]]
+name = "從得撒起，攻打提斐薩和其四境，擊殺城中一切的人，剖開其中所有的孕婦（王下15:16）"
+type = "evil"
+[[king.deeds.deed]]
+name = "行事眼中看為惡的事，和耶羅波安一樣拜金牛犢（王下15:18）"
+type = "evil"
 [[king.deeds.deed]]
 name = "向大富戶索銀交給亞述王普勒以堅定國位（王下15:19-20）"
 type = "evil"
@@ -592,8 +596,9 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "作王2年，被將軍比加背叛殺害（王下15:23, 25）"
+name = "行事眼中看為惡的事，和耶羅波安一樣拜金牛犢（王下15:24）"
 type = "evil"
+
 
 [[king]]
 name = "比加"
@@ -605,12 +610,15 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "任內亞述王奪取多處地業並擄走居民，後被何細亞殺害（王下15:29-30）"
+name = "殺了比加轄，篡位作王（王下15:25）"
+type = "evil"
+[[king.deeds.deed]]
+name = "行神眼中看為惡的事，和耶羅波安一樣拜金牛犢（王下15:28）"
 type = "evil"
 
 [king.other_events]
 [[king.other_events.event]]
-name = "亞述王提革拉毗列色奪取以色列多處地業（以雲、夏瑣、基列、加利利等），並將居民擄到亞述（王下15:29）"
+name = "亞述王提革拉毗列色奪取以色列多處地業（以雲、夏瑣、基列、加利利、亞伯伯瑪迦、亞挪、基低斯、基列、拿弗他利全地），並將居民擄到亞述（王下15:29）"
 
 [[king]]
 name = "何細亞"
@@ -622,7 +630,7 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "以色列最後一位王。因背叛亞述，導致撒馬利亞被圍3年後陷落，子民被擄（王下17:3-6）"
+name = "殺了比加，篡位為王（王下15:30）"
 type = "evil"
 
 [king.god_deeds]
@@ -962,8 +970,8 @@ name = "神差先知責備亞瑪謝拜以東神像，並預言神定意要滅他
 name = "以東在鹽谷被亞瑪謝擊殺一萬人，西拉城被攻取（王下14:7, 代下25:11）"
 
 [[king]]
-name = "烏西雅"
-en = "Uzziah"
+name = "烏西雅 / 亞撒利雅"
+en = "Uzziah / Azariah"
 start = 792
 end = 740
 type = "good"
@@ -971,23 +979,32 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "尋求神時甚是強盛，發展農業並發明新機器增強國防（代下26:5, 10, 15）"
+name = "行神眼中看為正的事（王下15:3, 代下26:4）"
 type = "good"
+[[king.deeds.deed]]
+name = "攻打非利士人、阿拉伯人和米烏尼人（代下26:6-7）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "建築、城樓、望樓、挖井、並且發展農業（代下26:9-10）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "發展軍事，有善於爭戰的軍兵，並且還發明新機器增強國防（代下26:11-15）"
+type = "mixed"
 [[king.deeds.deed]]
 name = "後因心高氣傲，強行進殿燒香，額上發出大痲瘋直到死日（王下15:5, 代下26:16-21）"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
-name = "神幫助烏西雅攻擊非利士人與阿拉伯人，使其極其強盛（代下26:7-8）"
+name = "神幫助烏西雅攻擊非利士人與阿拉伯人，使其極其強盛（代下26:7）"
 [[king.god_deeds.deed]]
 name = "神在烏西雅強行燒香時，降災使他額上發出大痲瘋（代下26:19-20）"
 
 [king.other_events]
 [[king.other_events.event]]
-name = "拆毀非利士城牆（迦特、亞實突等）（代下26:6）"
+name = "非利士數個城牆被猶大軍兵拆毀（代下26:6）"
 [[king.other_events.event]]
-name = "受神幫助擊敗阿拉伯、米烏尼（代下26:7）"
+name = "非利士人、阿拉伯人和米烏尼人被猶大軍兵攻擊（代下26:7）"
 [[king.other_events.event]]
 name = "亞捫人向烏西雅進貢（代下26:8）"
 
