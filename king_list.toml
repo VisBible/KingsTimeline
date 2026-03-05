@@ -603,7 +603,7 @@ type = "evil"
 [[king]]
 name = "比加"
 en = "Pekah"
-start = 740
+start = 752
 end = 732
 type = "evil"
 kingdom = "north"

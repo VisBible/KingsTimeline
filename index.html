@@ -713,31 +713,97 @@
             };
         }
         
+        /** 計算兩位國王在位時間的重疊年數（BC 年：start > end） */
+        function overlapYears(north, south) {
+            const overlapStart = Math.min(north.start, south.start);
+            const overlapEnd = Math.max(north.end, south.end);
+            const years = overlapStart - overlapEnd + 1;
+            return Math.max(0, years);
+        }
+
+        /** 計算配對分數：以重疊年數占較長在位年數為主，並給同年登基小幅加分 */
+        function pairScore(north, south) {
+            const overlap = overlapYears(north, south);
+            if (overlap <= 0) return 0;
+            const durN = north.start - north.end + 1;
+            const durS = south.start - south.end + 1;
+            const ratio = overlap / Math.max(durN, durS);
+            const sameStartBonus = (north.start === south.start) ? 0.1 : 0;
+            return ratio + sameStartBonus;
+        }
+
         function buildAllPeriods(northKings, southKings) {
-            const allPeriods = [];
+            const pairs = [];
+            const candidatePairs = [];
             northKings.forEach(nk => {
+                southKings.forEach(sk => {
+                    const overlap = overlapYears(nk, sk);
+                    if (overlap <= 0) return;
+                    const score = pairScore(nk, sk);
+                    candidatePairs.push({ north: nk, south: sk, score });
+                });
+            });
+            candidatePairs.sort((a, b) => {
+                if (b.score !== a.score) return b.score - a.score;
+                const overlapDiff = overlapYears(b.north, b.south) - overlapYears(a.north, a.south);
+                if (overlapDiff !== 0) return overlapDiff;
+                return (b.south?.end ?? 0) - (a.south?.end ?? 0);
+            });
+
+            const usedNorth = new Set();
+            const usedSouth = new Set();
+
+            // 指定配對優先：先鎖定使用者指定的組合，再進行一般自動配對
+            const preferredPairs = [
+                { northNames: ["拿答"], southNames: ["亞撒"] },
+                { northNames: ["耶戶"], southNames: ["亞哈謝"] }
+            ];
+            preferredPairs.forEach(({ northNames, southNames }) => {
+                const north = northKings.find(k => northNames.includes(k.name));
+                const south = southKings.find(k => southNames.includes(k.name));
+                if (!north || !south) return;
+                if (overlapYears(north, south) <= 0) return;
+                if (usedNorth.has(north) || usedSouth.has(south)) return;
+                usedNorth.add(north);
+                usedSouth.add(south);
+                pairs.push({ north, south });
+            });
+
+            candidatePairs.forEach(({ north, south }) => {
+                if (usedNorth.has(north) || usedSouth.has(south)) return;
+                usedNorth.add(north);
+                usedSouth.add(south);
+                pairs.push({ north, south });
+            });
+
+            const allPeriods = [];
+            pairs.forEach(({ north, south }) => {
+                const overlapStart = Math.min(north.start, south.start);
+                const overlapEnd = Math.max(north.end, south.end);
+                allPeriods.push({
+                    north,
+                    south,
+                    start: overlapStart,
+                    end: overlapEnd
+                });
+            });
+            northKings.forEach(nk => {
+                if (usedNorth.has(nk)) return;
                 allPeriods.push({ north: nk, south: null, start: nk.start, end: nk.end });
             });
             southKings.forEach(sk => {
-                let found = false;
-                for (let period of allPeriods) {
-                    if (period.north &&
-                        ((sk.start <= period.north.start && sk.end >= period.north.start) ||
-                         (sk.start <= period.north.end && sk.end >= period.north.end) ||
-                         (sk.start >= period.north.start && sk.end <= period.north.end) ||
-                         (period.north.start >= sk.start && period.north.end <= sk.end))) {
-                        if (!period.south) {
-                            period.south = sk;
-                            found = true;
-                            break;
-                        }
-                    }
-                }
-                if (!found) {
-                    allPeriods.push({ north: null, south: sk, start: sk.start, end: sk.end });
-                }
+                if (usedSouth.has(sk)) return;
+                allPeriods.push({ north: null, south: sk, start: sk.start, end: sk.end });
             });
-            allPeriods.sort((a, b) => b.start - a.start);
+            allPeriods.sort((a, b) => {
+                const endA = Math.max(a.north?.end ?? 0, a.south?.end ?? 0);
+                const endB = Math.max(b.north?.end ?? 0, b.south?.end ?? 0);
+                const endDiff = endB - endA;
+                if (endDiff !== 0) return endDiff;
+                const startA = Math.max(a.north?.start ?? 0, a.south?.start ?? 0);
+                const startB = Math.max(b.north?.start ?? 0, b.south?.start ?? 0);
+                return startB - startA;
+            });
             return allPeriods;
         }
         
