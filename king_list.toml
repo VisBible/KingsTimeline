@@ -615,6 +615,10 @@ type = "evil"
 [[king.deeds.deed]]
 name = "行神眼中看為惡的事，和耶羅波安一樣拜金牛犢（王下15:28）"
 type = "evil"
+[[king.deeds.deed]]
+name = "開始攻擊猶大（王下15:37）"
+type = "evil"
+
 
 [king.other_events]
 [[king.other_events.event]]
@@ -632,6 +636,12 @@ kingdom = "north"
 [[king.deeds.deed]]
 name = "殺了比加，篡位為王（王下15:30）"
 type = "evil"
+[[king.deeds.deed]]
+name = "行神眼中看為惡之事（王下17:2）"
+type = "evil"
+[[king.deeds.deed]]
+name = "聯絡埃及王梭並背叛亞述，反被其囚禁，隨後導致滅國（王下17:4-6）"
+type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
@@ -639,7 +649,7 @@ name = "神因以色列人長期離棄神、事奉偶像，使亞述王滅其國
 
 [king.other_events]
 [[king.other_events.event]]
-name = "亞述王撒縵以色使何細亞進貢，後因何細亞聯絡埃及王梭並背叛，亞述王將其囚禁，圍困撒馬利亞三年後滅其國，將以色列人擄往亞述與瑪代（王下17:3-6）"
+name = "亞述王撒縵以色攻擊以色列，使何細亞進貢，後因何細亞聯絡埃及王梭並背叛，亞述王將其囚禁，圍困撒馬利亞三年後滅其國，將以色列人擄至亞述（王下17:3-6）"
 [[king.other_events.event]]
 name = "亞述王從巴比倫、古他、亞瓦、哈馬、西法瓦音遷移居民安置在撒馬利亞（王下17:24）"
 
@@ -1018,14 +1028,24 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "行正道，建立殿的上門，打敗亞捫人使其進貢（代下27:2-6）"
+name = "行神眼中看為正的事，效法父親所行（王下15:34, 代下27:2, 6）"
 type = "good"
+[[king.deeds.deed]]
+name = "建立神殿的上門（代下27:2）"
+type = "good"
+[[king.deeds.deed]]
+name = "建立城邑、營寨和高樓（代下27:3）"
+type = "mixed"
+[[king.deeds.deed]]
+name = "打敗亞捫人，使他們進貢（代下27:5）"
+type = "mixed"
+
 
 [king.other_events]
 [[king.other_events.event]]
-name = "亞捫人戰敗後連續三年向約坦進貢銀子、小麥、大麥（代下27:5）"
+name = "亞蘭王利汛和以色列王比加開始攻擊猶大（王下15:37）"
 [[king.other_events.event]]
-name = "亞蘭王利汛開始攻擊猶大（王下15:37）"
+name = "亞捫人戰敗後連續三年向約坦進貢銀子、小麥、大麥（代下27:5）"
 
 [[king]]
 name = "亞哈斯"
@@ -1037,22 +1057,37 @@ kingdom = "south"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "極其惡劣，使兒子經火，封鎖聖殿，並仿造大馬士革的偶像壇（王下16:3, 10, 代下28:3, 24）"
+name = "行耶和華眼中看為惡的事，效法以色列諸王所行（王下16:2-3, 代下28:1-2）"
+type = "evil"
+[[king.deeds.deed]]
+name = "拜巴力，使兒女經火，向偶像獻祭，並仿造大馬士革的偶像壇，亦向大馬士革神獻祭（王下16:3-4, 10-14, 代下28:2-4, 22-32）"
+type = "evil"
+[[king.deeds.deed]]
+name = "請求亞述王來幫忙打亞蘭跟以色列，自稱是亞述王的僕人和兒子，並且將神殿裡和王宮府裡的所有金銀都送給亞述王（王下16:7-9, 代下28:16-18）"
+type = "evil"
+[[king.deeds.deed]]
+name = "擅自更改獻祭的條例，關閉聖殿、毀壞聖器（王下16:15-18, 代下28:24）"
+type = "evil"
+[[king.deeds.deed]]
+name = "在猶大各城建立邱壇，向別神燒香（代下28:25）"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
-name = "神將亞哈斯交在亞蘭王與以色列王手中受挫，因其離棄神（代下28:5-6）"
+name = "神將亞哈斯交在亞蘭王與以色列王手中受挫，許多居民被俘虜至大馬士革和撒瑪利亞（代下28:5-8）"
 [[king.god_deeds.deed]]
-name = "神差先知俄德勸阻以色列軍兵虐待猶大俘虜，使俘虜得釋放（代下28:9-11）"
+name = "神差先知俄德勸阻以色列軍兵虐待猶大俘虜，使俘虜得釋放（代下28:9-15）"
+[[king.god_deeds.deed]]
+name = "神使以東人和非利士人來攻擊猶大，因為亞哈斯干犯耶和華（代下28:19）"
 
 [king.other_events]
 [[king.other_events.event]]
-name = "亞蘭王利汛打敗亞哈斯，擄掠許多民到大馬士革，並奪回以拉他（王下16:5-6, 代下28:5）"
+name = "亞蘭王利汛和以色列王比加來打亞哈斯，卻未能勝他（王下16:5）"
 [[king.other_events.event]]
-name = "亞述王提革拉毗列色受賂攻打大馬士革，殺了利汛，但隨後反而欺凌亞哈斯（王下16:7-9, 代下28:20）"
+name = "以東、非利士攻擊猶大並擄掠子民（代下28:17-18）"
 [[king.other_events.event]]
-name = "以東、非利士趁機入侵猶大並擄掠子民（代下28:17-18）"
+name = "亞述王提革拉毗列色受亞哈斯之賂，攻打大馬士革，殺了亞蘭王利汛，虜其居民，但隨後反而欺凌亞哈斯（王下16:7-9, 代下28:16-21）"
+
 
 [[king]]
 name = "希西家"
