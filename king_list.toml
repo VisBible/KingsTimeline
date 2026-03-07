@@ -9,66 +9,91 @@ kingdom = "united"
 [king.deeds]
 [[king.deeds.deed]]
 name = "攻取耶路撒冷錫安保障，命名為「大衛城」（代上11:5, 7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A11%3A5%2C%207&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "將約櫃運往耶路撒冷，過程中烏撒伸手扶櫃被擊殺而一度停放俄別以東家（代上13:1-14）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A13%3A1-14&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "數次擊敗非利士人，制伏摩押、亞蘭、以東、亞們、亞瑪力、拉巴（代上14:8-16, 18:1-13, 19, 20）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A14%3A8-16%2C%2018%3A1-13%2C%2019%2C%2020&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "有心為神建殿，神因其流人血過多而不許，命所羅門建造（代上17:1-15, 22:8）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A17%3A1-15%2C%2022%3A8&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "為聖殿預備極其豐富的金、銀、銅、鐵、木石等材料（代上22:1-13, 28, 29:1-9）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A22%3A1-13%2C%2028%2C%2029%3A1-9&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "因數點百姓得罪神，引發三日瘟疫，後在阿珥楠禾場築壇獻祭使災止住（代上21）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A21&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "因亞多尼雅要篡位，大衛趕緊立所羅門為王（王上1:5-40）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A1%3A5-40&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "大衛臨終囑咐所羅門要遵行神的律法以及其他政治決策（王上2:1-9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A2%3A1-9&version=CUVMPT"
 type = "good"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "以色列長老照著神的應許在希伯崙膏立大衛為王（代上11:1-3）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A11%3A1-3&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "耶和華使以色列人擊殺非利士人，大獲全勝（代上11:14）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A11%3A14&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神在烏撒因手扶約櫃被擊殺後，賜福給存放約櫃的俄別以東家（代上13:9-14）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A13%3A9-14&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神將非利士人交在大衛手中，指示大衛要如何攻打非利士，又使列國都懼怕他（代上14:8-17）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A14%3A8-17&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉先知拿單傳達「大衛之約」，應許其子孫必建聖殿，且國位必堅定直到永遠（代上17:3-15）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A17%3A3-15&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神差遣先見迦得讓大衛在三樣災中選擇，後降瘟疫於以色列，但在大衛謙卑禱告後，神後悔不降災（代上21:9-17）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A21%3A9-17&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神差使者吩咐大衛在阿珥楠禾場築壇，大衛在禾場獻祭時，神使火從天降在燔祭壇上應允他（代上21:18-31）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A21%3A18-31&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神親手劃出聖殿的樣式，使大衛明白如何指示所羅門建造（代上28:19）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A28%3A19&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "推羅王希蘭將香柏木運到大衛那裡，並差遣石匠、木匠為他建造宮殿（代上14:1）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A14%3A1&version=CUVMPT"
 [[king.other_events.event]]
 name = "非利士人兩次在利乏音谷安營尋索大衛，最終被大衛擊敗（代上14:8-16）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A14%3A8-16&version=CUVMPT"
 [[king.other_events.event]]
 name = "摩押被大衛征服，成為大衛的僕人，並向他進貢（代上18:2）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A18%3A2&version=CUVMPT"
 [[king.other_events.event]]
 name = "瑣巴王哈大利謝與大衛爭戰，大衛奪了他的戰車、馬匹、步兵（代上18:3-4）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A18%3A3-4&version=CUVMPT"
 [[king.other_events.event]]
 name = "大馬士革的亞蘭人前來幫助瑣巴王，被大衛殺死二萬二千人，隨後歸服進貢（代上18:5-6）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A18%3A5-6&version=CUVMPT"
 [[king.other_events.event]]
 name = "哈馬王陀烏因大衛擊敗其仇敵哈大利謝，差遣兒子哈多蘭帶著金銀銅器向大衛致安祝福（代上18:9-10）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A18%3A9-10&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞捫王哈嫩受首領聳動，凌辱大衛派去弔喪的臣僕，剃去他們一半鬍鬚並割斷衣服（代上19:1-4）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A19%3A1-4&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞捫拿一千他連得銀子從美索不達米亞、亞蘭、瑪迦、瑣巴雇傭戰車馬兵對抗大衛（代上19:6-7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A19%3A6-7&version=CUVMPT"
 [[king.other_events.event]]
 name = "埃及法老為逃亡的以東王後裔哈達提供食物、房屋與田地，甚至將王后的妹子賜他為妻（王上11:18-19）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A11%3A18-19&version=CUVMPT"
 
 [[king]]
 name = "所羅門"
@@ -81,92 +106,125 @@ kingdom = "united"
 [king.deeds]
 [[king.deeds.deed]]
 name = "治死亞多尼雅，革除祭司亞比亞他，殺死約押；立比拿雅作元帥，立撒督作祭司（王上2:13-35）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A2%3A13-35&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "限制示每居住在耶路撒冷，但他違反規定，所羅門吩咐比拿雅治死他（王上2:36-46）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A2%3A36-46&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "娶了埃及王法老的女兒（王上3:1）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A3%3A1&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "在基遍向神求智慧以判斷民事，蒙神應允並獲賜富足與尊榮（王上3:5-14, 代下1:7-12）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A3%3A5-14%2C%20%E4%BB%A3%E4%B8%8B1%3A7-12&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "有智慧斷案，找到孩子的親生母親（王上3:16-28）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A3%3A16-28&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "作箴言三千句、詩歌一千零五首（王上4:32）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A4%3A32&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "耗時 7 年建成耶和華的聖殿（王上6:38，代下3）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A6%3A38%2C%E4%BB%A3%E4%B8%8B3&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "耗時 13 年建成自己的宮室（王上7:1）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A7%3A1&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "差遣人去推羅召來戶蘭，製作聖殿的各樣設備（王上7:13-51，代下2:7-14,4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A7%3A13-51%2C%E4%BB%A3%E4%B8%8B2%3A7-14%2C4&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "將約櫃從大衛城運進聖殿，神的榮光充滿這殿（王上8:1-11，代下5:2-14）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A8%3A1-11%2C%E4%BB%A3%E4%B8%8B5%3A2-14&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "王和眾人在神面前奉獻聖殿，甚至因銅壇太小、容不下脂油，而將殿前院子分別為聖來獻祭（王上8:62-64，代下7:1-10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A8%3A62-64%2C%E4%BB%A3%E4%B8%8B7%3A1-10&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "把加利利的二十座城給推羅王希蘭（王上8:10-13）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A8%3A10-13&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "所羅門挑取不能滅盡、外邦人的後裔作服苦的奴僕，不過不讓以色列人當奴僕（王上9:20-22，代下8:7-9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A9%3A20-22%2C%E4%BB%A3%E4%B8%8B8%3A7-9&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "所羅門用金子錘出擋牌、盾牌，並且用象牙製造寶座。宮裡所有的器皿都是精金的。（王上10:16-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A10%3A16-21&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "所羅門拿希蘭回送（退貨）的那些城邑，使以色列人居住在那裡；他又在各地建造了積貨城（代下 8:2-6）。"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B%208%3A2-6&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "所羅門將法老的女兒帶出大衛城，到為她建造的宮裡（王上9:24, 代下8:11）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A9%3A24%2C%20%E4%BB%A3%E4%B8%8B8%3A11&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "寵愛外邦妃嬪，心偏離耶和華去事奉別神，引發神的憤怒（王上11:1-13）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A11%3A1-13&version=CUVMPT"
 type = "evil"
 
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神使所羅門在以色列眾人眼前甚為尊大、極其威嚴，勝過他以前的以色列王。（代上29:25）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A29%3A25&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神在基遍在夢中向所羅門顯現，賜予他前無古人、後無來者的智慧，以及富足與尊榮。並且告訴他，若效法他父親大衛遵行神的道，神會使他長壽。（王上3:5-14，代下1:7-12）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A3%3A5-14%2C%E4%BB%A3%E4%B8%8B1%3A7-12&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神告訴所羅門，若他遵行神的律例、遵從神的誡命，上帝就會應驗祂向大衛的應許，必住在以色列人中間，不丟棄以色列民（王上 6:11-13）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A%206%3A11-13&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "聖殿完工運入約櫃時，神的榮光充滿殿中，使祭司不能站立供職（王上8:10-11，代下5:13-14）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A8%3A10-11%2C%E4%BB%A3%E4%B8%8B5%3A13-14&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "所羅門禱告後，神使火從天降下燒盡燔祭，神的榮光再次充滿殿宇，祭司甚至不能進殿（代下7:1-2）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B7%3A1-2&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神二次向所羅門顯現，應許若遵守律法必堅固國位，若離棄神則必剪除以色列人（王上9:2-9，代下7:12-22）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A9%3A2-9%2C%E4%BB%A3%E4%B8%8B7%3A12-22&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神因所羅門晚年背離，向他發怒，說必將他的國奪回，賜給他的臣子。但因大衛的緣故，這事要在他兒子手中發生，並且要留一個支派給他的兒子（王上11:9-13)"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A11%3A9-13&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神興起哈達、利遜作為所羅門的敵人（王上11:14, 23）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A11%3A14%2C%2023&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉先知亞希雅將新衣撕成十二片，預言國度將分裂，並將十個支派賜給耶羅波安（王上11:29-39）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A11%3A29-39&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "埃及法老將女兒嫁給所羅門，並攻取基色城作為女兒的妝奩（王上3:1, 9:16）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A3%3A1%2C%209%3A16&version=CUVMPT"
 [[king.other_events.event]]
 name = "所羅門在世的日子，從大河到非利士地，這些國都進貢服事他（王上4:21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A4%3A21&version=CUVMPT"
 [[king.other_events.event]]
 name = "推羅王希蘭與所羅門立約，提供建殿所需的香柏木、松木、檀香木，並派遣巧匠戶蘭協助工事（王上5:1-12, 7:13-45, 9:11, 代下2:3-16, 3:15-4:17）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A5%3A1-12%2C%207%3A13-45%2C%209%3A11%2C%20%E4%BB%A3%E4%B8%8B2%3A3-16%2C%203%3A15-4%3A17&version=CUVMPT"
 [[king.other_events.event]]
 name = "示巴女王慕名而來，用難解的話試問所羅門，並贈送極多金子、寶石與香料（王上10:1-10, 代下9:1-9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A10%3A1-10%2C%20%E4%BB%A3%E4%B8%8B9%3A1-9&version=CUVMPT"
 [[king.other_events.event]]
 name = "普天下的王都求見所羅門要聽其智慧，每年各帶金器、銀器、軍械等貢物而來（王上10:24-25, 代下9:23-24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A10%3A24-25%2C%20%E4%BB%A3%E4%B8%8B9%3A23-24&version=CUVMPT"
 [[king.other_events.event]]
 name = "以東人哈達興起，亞蘭的利遜在大馬士革做王，成為以色列的敵人（王上11:14, 23-25）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A11%3A14%2C%2023-25&version=CUVMPT"
 [[king.other_events.event]]
 name = "晚年埃及王示撒收留逃亡的耶羅波安（王上11:40）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A11%3A40&version=CUVMPT"
 
 # 北國以色列
 [[king]]
@@ -180,22 +238,28 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "帶領十個支派背叛大衛家，分裂王國（王上12:16-20, 代下10:16）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A12%3A16-20%2C%20%E4%BB%A3%E4%B8%8B10%3A16&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "建築示劍和毗努伊勒（王上12:25）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A12%3A25&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
-name = "鑄造兩隻金牛犢安置在伯特利和但，立凡民（非利未人）為祭司，私定節期、建殿、自行獻祭，陷民於罪中（王上12:26-35, 代下11:15）"
+name = "鑄造兩隻金牛犢安置在伯特利和但，立凡民（非利未人）為祭司，私定節期、建殿、自行獻祭，陷民於罪中（王上12:26-33, 代下11:15）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A12%3A26-35%2C%20%E4%BB%A3%E4%B8%8B11%3A15&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "在祭壇旁伸手要拿住神人，手便枯乾，後經神人禱告才復原（王上13:4-6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A13%3A4-6&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神差遣神人從猶大到伯特利，預言大衛家必生約西亞王來毀滅偶像的祭司和壇，並使王枯乾的手復原（王上13:1-6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A13%3A1-6&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉先知亞希雅預言耶羅波安家男丁必被剪除，且其子必死，果真應驗（王上14:7-17）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A14%3A7-17&version=CUVMPT"
 
 
 [[king]]
@@ -209,11 +273,13 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行惡，效法其父。在圍困非利士的基比頓時被巴沙背叛殺害（王上15:26-27）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A26-27&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神應驗藉亞希雅所說的話，使巴沙篡位並滅耶羅波安全家（王上15:29）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A29&version=CUVMPT"
 
 
 [[king]]
@@ -227,15 +293,18 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "殺盡耶羅波安全家，卻仍行耶羅波安所行的惡（王上15:29, 34）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A29%2C%2034&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神的話臨到哈拿尼的兒子耶戶，責備巴沙並預言其家必像耶羅波安家一樣被除盡（王上16:1-4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A1-4&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞蘭王便哈達受猶大王亞撒之賂，背棄與巴沙之約，攻打以色列的城邑（王上15:18-20）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A18-20&version=CUVMPT"
 
 [[king]]
 name = "以拉"
@@ -248,14 +317,17 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "和他父親一樣拜偶像（王上16:13）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A13&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "在臣子家喝醉時被心利所殺（王上16:9-10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A9-10&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神應驗藉先知耶戶責備巴沙的話，使心利殺害以拉並滅巴沙全家（王上16:12）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A12&version=CUVMPT"
 
 [[king]]
 name = "心利"
@@ -268,9 +340,11 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "篡位後殺盡巴沙全家，僅作王7日，見城被圍便自焚而死（王上16:11, 15-18）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A11%2C%2015-18&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "行耶羅波安所行的那罪（王上16:19）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A19&version=CUVMPT"
 type = "evil"
 
 [[king]]
@@ -284,9 +358,11 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "買下撒馬利亞山建城作為首都（王上16:24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A24&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "行惡比以前的王更甚（王上16:25-26）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A25-26&version=CUVMPT"
 type = "evil"
 
 [[king]]
@@ -300,46 +376,62 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "娶西頓王的女兒耶洗別為妻，引進巴力崇拜，為之建廟築壇，作惡勝過以前的王（王上16:30-33）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A30-33&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "其妻耶洗別殺耶和華眾先知（王上18:4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A18%3A4&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "與先知以利亞經歷迦密山試驗（王上18:16-46）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A18%3A16-46&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "私自放掉亞蘭王便哈達，並且與他立約（王上20:34）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A20%3A34&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "貪謀拿伯的葡萄園而殺害拿伯（王上21:1-16）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A21%3A1-16&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "找猶大王約沙法一起去打基列的拉末，不聽先知米該雅的警告，在戰爭中中箭身亡（王上22:4-37）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A22%3A4-37&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉以利亞預言旱荒（王上17:1）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A17%3A1&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神在基立溪旁供養以利亞，並藉他的手使撒勒法寡婦的麵與油不短缺，且使其子復活（王上17:2-24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A17%3A2-24&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神在迦密山降火顯應，證明祂是神，隨後降下大雨結束旱災（王上18:36-46）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A18%3A36-46&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神在何烈山以微小的聲音向以利亞顯現，並命他膏立哈薛為亞蘭王、耶戶為以色列新王、膏以利沙為先知（王上19:9-18）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A19%3A9-18&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉先知指點亞哈擊敗亞蘭王便哈達，並因亞哈私放敵王而預言亞哈必賠命（王上20:13-42）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A20%3A13-42&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉以利亞責備亞哈謀害拿伯，預言亞哈家必滅亡，後因亞哈自卑而延遲災禍（王上21:17-29）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A21%3A17-29&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神差遣「謊言的靈」入先知口中引誘亞哈陣亡，並藉米該雅預言其必敗（王上22:19-28, 代下18）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A22%3A19-28%2C%20%E4%BB%A3%E4%B8%8B18&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "西頓王將女兒耶洗別嫁給亞哈（王上16:31）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A16%3A31&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞蘭王便哈達率領三十二個王圍攻撒馬利亞，索要金銀、妻子、兒女（王上20:1-6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A20%3A1-6&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞蘭王在基列拉末與亞哈交戰，下令只攻擊以色列王（王上22:31）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A22%3A31&version=CUVMPT"
 
 [[king]]
 name = "亞哈謝"
@@ -353,21 +445,26 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行耶和華眼中看為惡的事，敬拜巴力，效法耶羅波安的罪惡（王上22:52-53）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A22%3A52-53&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "跟約沙法說想一起跟他去厄斐運金子，被拒（王上22:48-49）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A22%3A48-49&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "從樓上欄杆掉下去就病了，病重時求問外邦神巴力西卜，被以利亞責備後病死（王下1:2, 17）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B1%3A2%2C%2017&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉以利亞預言王必不下床，必病死，並二次降火燒滅前來逮捕以利亞的五十夫長與兵眾（王下1:3-17）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B1%3A3-17&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "摩押在亞哈死後背叛以色列（王下1:1）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B1%3A1&version=CUVMPT"
 
 [[king]]
 name = "約蘭"
@@ -380,43 +477,58 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "除掉巴力柱像，但仍陷在耶羅波安的罪裡（王下3:2-3）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B3%3A2-3&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "邀猶大王約沙法、以東王一同去攻打摩押（王下3:7-9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B3%3A7-9&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "與猶大王亞哈謝去基列的拉末，與亞蘭王哈薛交戰，結果被亞蘭人打傷（王下8:28-29）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A28-29&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "後被耶戶射殺（王下9:24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B9%3A24&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神在三王攻打摩押缺水時，藉以利沙使谷中滿了水，並將摩押人交在他們手中（王下3:14-20）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B3%3A14-20&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "因摩押王見不能打敗以色列等大軍，所以將其長子獻為燔祭，引起神對以色列人的憤怒（王下3:26-27）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B3%3A26-27&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉以利沙行多項神蹟：使寡婦油增多、使書念婦人生子並復活其子、解毒湯之毒、以二十餅飽百人（王下4:1-44）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B4%3A1-44&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉以利沙治好乃縵的大痲瘋（王下5:1-14）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B5%3A1-14&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神使圍困以利沙的亞蘭軍眼目昏迷，並顯出火車火馬護衛先知（王下6:8-23）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B6%3A8-23&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神使亞蘭軍聽見大軍車馬聲而逃跑，應驗以利沙關於撒馬利亞物價恢復的預言（王下7:1-19）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B7%3A1-19&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神透過以利沙預言哈薛必作亞蘭王，並且會苦害以色列人（王下8:7-14）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A7-14&version=CUVMPT"
 
 
 [king.other_events]
 [[king.other_events.event]]
 name = "摩押王米沙背叛以色列（王下3:4-5）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B3%3A4-5&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞蘭元帥乃縵因大痲瘋求醫於以色列先知（王下5:1-17）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B5%3A1-17&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞蘭王多次圍困以色列城邑，甚至導致撒馬利亞發生易子而食的饑荒（王下6:8-7:20）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B6%3A8-7%3A20&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞蘭王哈薛篡位後在基列拉末擊傷約蘭（王下8:15, 28）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A15%2C%2028&version=CUVMPT"
 
 [[king]]
 name = "耶戶"
@@ -429,26 +541,33 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "受膏後擊殺約蘭、耶洗別、亞哈全家及其大臣，密友、祭司，也殺了猶大王亞哈謝及其眾首領和眾姪子，並且在往撒馬利亞的路上殺了亞哈謝的弟兄（王下9:15-33, 10:1-17, 代下22:8-9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B9%3A15-33%2C%2010%3A1-17%2C%20%E4%BB%A3%E4%B8%8B22%3A8-9&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "設計謀殺了拜巴力者，並拆毀了巴力廟作為廁所（王下10:18-25）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B10%3A18-25&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "雖滅了巴力，卻仍拜金牛犢，未盡心遵守律法（王下10:29, 31）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B10%3A29%2C%2031&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神差以利沙的徒弟膏耶戶，並命其滅盡亞哈家，為眾先知申冤報仇（王下9:1-10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B9%3A1-10&version=CUVMPT"
 
 [[king.god_deeds.deed]]
 name = "神應許耶戶的子孫必坐國位直到四代（王下10:30）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B10%3A30&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神割裂以色列國，使外邦攻擊以色列境內（王下10:32）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B10%3A32&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞蘭王哈薛攻擊以色列境界（王下10:32-33）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B10%3A32-33&version=CUVMPT"
 
 [[king]]
 name = "約哈斯"
@@ -460,24 +579,30 @@ kingdom = "north"
 
 [king.deeds]
 [[king.deeds.deed]]
-name = "行神眼中看為惡的事，拜金牛犢（王下10:2）"
+name = "行神眼中看為惡的事，拜金牛犢（王下13:2）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A2&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "因常被亞蘭王欺壓，求告神後蒙賜拯救者（王下13:4-5）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A4-5&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "雖獲賜拯救者仍不悔改，甚至還在撒馬利亞留下偶像（王下13:6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A6&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "因王拜金牛犢，神屢次將以色列交在亞蘭王哈薛和他兒子便哈達手裡（王下13:3）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A3&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神應允約哈斯的哀求，賜下一位拯救者使以色列人脫離亞蘭人的手（王下13:4-5）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A4-5&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞蘭王哈薛及其子便哈達屢次欺壓以色列，只留給約哈斯 50 名馬兵、10 輛戰車、1 萬步兵（王下13:3, 7）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A3%2C%207&version=CUVMPT"
 
 [[king]]
 name = "約阿施"
@@ -490,26 +615,33 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為惡的事，依然像耶羅波安一樣去拜金牛犢（王下13:11）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A11&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "去探訪臨終的以利沙，因只拿箭打地三次被以利沙責備（王下13:14-19）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A14-19&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "三次打敗亞蘭王便哈達，收回失地（王下13:25）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A25&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "在伯示麥之戰打敗猶大王亞瑪謝，並拆毀耶路撒冷城牆，又帶走神殿裡的金銀和器皿，還帶人為質。（王下14:11-14）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A11-14&version=CUVMPT"
 type = "mixed"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉病重的以利沙預言王必三次打敗亞蘭人，並在王死後藉以利沙的骸骨使死人復活（王下13:14-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A14-21&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神因與亞伯拉罕、以撒、雅各所立的約，仍施恩給以色列人，憐憫他們，眷顧他們，不肯滅盡他們（王下13:23）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A23&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞蘭王便哈達三度敗給約阿施，失去其父哈薛所奪的城邑（王下13:24-25）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B13%3A24-25&version=CUVMPT"
 
 [[king]]
 name = "耶羅波安二世"
@@ -522,15 +654,18 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為惡的事，仍行耶羅波安的罪（王下14:24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A24&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "收回邊界之地（王下14:25-28）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A25-28&version=CUVMPT"
 type = "mixed"
 
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神憐憫以色列人的艱苦，藉先知約拿預言王必收回邊界之地（王下14:25-27）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A25-27&version=CUVMPT"
 
 
 [[king]]
@@ -544,11 +679,13 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為惡的事，和耶羅波安一樣，拜金牛犢（王下15:9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A9&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神應驗對耶戶的應許，使其子孫作王到第四代而止（王下15:12）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A12&version=CUVMPT"
 
 [[king]]
 name = "沙龍"
@@ -561,6 +698,7 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "殺害撒迦利雅，篡位作王（王下15:10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A10&version=CUVMPT"
 type = "evil"
 
 [[king]]
@@ -574,17 +712,21 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "從得撒起，攻打提斐薩和其四境，擊殺城中一切的人，剖開其中所有的孕婦（王下15:16）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A16&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "行事眼中看為惡的事，和耶羅波安一樣拜金牛犢（王下15:18）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A18&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "向大富戶索銀交給亞述王普勒以堅定國位（王下15:19-20）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A19-20&version=CUVMPT"
 type = "evil"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞述王普勒來攻擊以色列，收下米拿現從大富戶索要的一千他連得銀子後撤兵（王下15:19-20）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A19-20&version=CUVMPT"
 
 [[king]]
 name = "比加轄"
@@ -597,6 +739,7 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行事眼中看為惡的事，和耶羅波安一樣拜金牛犢（王下15:24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A24&version=CUVMPT"
 type = "evil"
 
 
@@ -611,18 +754,22 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "殺了比加轄，篡位作王（王下15:25）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A25&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "行神眼中看為惡的事，和耶羅波安一樣拜金牛犢（王下15:28）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A28&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "開始攻擊猶大（王下15:37）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A37&version=CUVMPT"
 type = "evil"
 
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞述王提革拉毗列色奪取以色列多處地業（以雲、夏瑣、基列、加利利、亞伯伯瑪迦、亞挪、基低斯、基列、拿弗他利全地），並將居民擄到亞述（王下15:29）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A29&version=CUVMPT"
 
 [[king]]
 name = "何細亞"
@@ -635,23 +782,29 @@ kingdom = "north"
 [king.deeds]
 [[king.deeds.deed]]
 name = "殺了比加，篡位為王（王下15:30）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A30&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "行神眼中看為惡之事（王下17:2）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B17%3A2&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "聯絡埃及王梭並背叛亞述，反被其囚禁，隨後導致滅國（王下17:4-6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B17%3A4-6&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神因以色列人長期離棄神、事奉偶像，使亞述王滅其國並將子民擄去（王下17:7-23）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B17%3A7-23&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞述王撒縵以色攻擊以色列，使何細亞進貢，後因何細亞聯絡埃及王梭並背叛，亞述王將其囚禁，圍困撒馬利亞三年後滅其國，將以色列人擄至亞述（王下17:3-6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B17%3A3-6&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞述王從巴比倫、古他、亞瓦、哈馬、西法瓦音遷移居民安置在撒馬利亞（王下17:24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B17%3A24&version=CUVMPT"
 
 # 南國猶大
 [[king]]
@@ -665,35 +818,45 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "不聽老年人諫言導致王國分裂（王上12:1-20, 代下10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A12%3A1-20%2C%20%E4%BB%A3%E4%B8%8B10&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "原先招聚猶大和便雅憫支派，想要奪回以色列，但被神阻止（王上12:21-24, 代下11:1-4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A12%3A21-24%2C%20%E4%BB%A3%E4%B8%8B11%3A1-4&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "築壇、立柱像和木偶，國中也有孌童（王上14:23）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A14%3A23&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "因為所羅門製造的金盾牌被埃及王示撒奪走了，羅波安王又製造銅盾牌代替金盾牌（王上14:25-26, 代下12:9-11）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A14%3A25-26%2C%20%E4%BB%A3%E4%B8%8B12%3A9-11&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "羅波安在猶大地修築各個城邑，又堅固各處的保障，設立軍長，預備食物、盾牌和槍（代下11:5-12）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B11%3A5-12&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "生了許多兒子，將眾子分散在猶大和便雅憫全地，又賜給他們許多糧食，為他們多尋妻子（代下11:21-23）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B11%3A21-23&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "強盛的時候，就離棄神的律法，以色列人也都隨從他（代下12:1）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B12%3A1&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉神人示瑪雅禁止羅波安與北國交戰（王上12:22-24，代下11:2-4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A12%3A22-24%2C%E4%BB%A3%E4%B8%8B11%3A2-4&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉示瑪雅說明埃及王侵略是因民離棄神，因王自卑，神使其略得拯救（代下12:5-12）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B12%3A5-12&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "埃及王示撒率領大軍攻取猶大堅固城，並奪走聖殿與王宮寶物（王上14:25-26, 代下12:2-4, 9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A14%3A25-26%2C%20%E4%BB%A3%E4%B8%8B12%3A2-4%2C%209&version=CUVMPT"
 
 [[king]]
 name = "亞比央 / 亞比雅"
@@ -706,15 +869,18 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "仍行耶羅波安之惡（王上15:3）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A3&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "常與耶羅波安爭戰，因倚靠神在一次戰役中以 40 萬大軍殺死以色列精兵 50 萬，並且攻取他幾座城（王上15:6-7, 代下13:2, 2-20）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A6-7%2C%20%E4%BB%A3%E4%B8%8B13%3A2%2C%202-20&version=CUVMPT"
 type = "good"
 
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神因亞比雅倚靠祂，使猶大人在戰場大勝耶羅波安（代下13:4-18）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B13%3A4-18&version=CUVMPT"
 
 [[king]]
 name = "亞撒"
@@ -727,45 +893,59 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "效法大衛行正事，除去偶像、孌童，並貶了拜偶像之祖母的太后位（王上15:11-13, 代下14:2-3, 15:16）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A11-13%2C%20%E4%BB%A3%E4%B8%8B14%3A2-3%2C%2015%3A16&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "將他父親和自己所分別為聖的金銀與器皿，都奉到耶和華的殿裡（王上15:15, 代下15:18）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A15%2C%20%E4%BB%A3%E4%B8%8B15%3A18&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "尋求神的心意，修築城邑（代下14:7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B14%3A7&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "呼求神擊敗古實王謝拉的百萬大軍（代下14:9-15）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B14%3A9-15&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "亞撒因順服亞撒利雅的預言，就在猶大、便雅憫全地，以及奪來的各城，除掉各樣的偶像，並修築耶和華的殿（代下15:15）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B15%3A15&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "向神獻祭，盡心、盡意、尋求神（代下15:10-15）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B15%3A10-15&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "晚年賄賂亞蘭王便哈達，要求對方與以色列王巴沙毀約。事成之後，將巴沙修築拉瑪所用的石頭都搬到南國，用來修築加巴和米斯巴（王上15:18-22, 代下16:1-6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A18-22%2C%20%E4%BB%A3%E4%B8%8B16%3A1-6&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "因仰賴亞蘭王而非神受責，惱怒之下將先見哈拿尼囚在監裡，同時也虐待人民（代下16:7-10）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B16%3A7-10&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "晚年有腳病，病中不求助神，只求助醫生（代下16:12）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B16%3A12&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神應允亞撒的求告，使古實百萬大軍敗在猶大人面前（代下14:11-12）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B14%3A11-12&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神的靈感動俄德的兒子亞撒利雅激勵亞撒尋求神（代下15:1-7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B15%3A1-7&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "先見哈拿尼責備亞撒仰賴亞蘭王而未仰賴神（代下16:7-9）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B16%3A7-9&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "古實王謝拉率領百萬大軍、戰車三百輛侵略猶大，在瑪利沙被亞撒擊敗（代下14:9-13）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B14%3A9-13&version=CUVMPT"
 [[king.other_events.event]]
 name = "因以色列王巴沙常與南國征戰，不許人從猶大王那裡出入，受亞撒賄賂的亞蘭王便哈達攻擊北國以色列以解猶大之圍（王上15:18-20, 代下16:2-4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A15%3A18-20%2C%20%E4%BB%A3%E4%B8%8B16%3A2-4&version=CUVMPT"
 
 [[king]]
 name = "約沙法"
@@ -778,46 +958,61 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行他父親所行的道，不偏離左右，行耶和華眼中看為正的事（王上22:43, 代下17:3-4, 20:32）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A22%3A43%2C%20%E4%BB%A3%E4%B8%8B17%3A3-4%2C%2020%3A32&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "把他父親在世所剩下的孌童都從國中除去（王上22:46）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A22%3A46&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "原本要去俄斐運金子，但是沒有，因為船被神破壞，也拒絕亞哈謝的幫忙（王上22:48-49, 代下20:35-37）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A22%3A48-49%2C%20%E4%BB%A3%E4%B8%8B20%3A35-37&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "和以色列王約蘭、以東王一同去攻打摩押（王下3:7-9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B3%3A7-9&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "差遣臣子與利未人遍行各城教導律法書（代下17:7-9）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B17%3A7-9&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "因與惡王亞哈結親及與之一同去攻打基列的拉末而受先知責備（代下18:1-19:3）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B18%3A1-19%3A3&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "設立審判官，並鼓勵他們敬畏神（代下 19:5-11）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B%2019%3A5-11&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "面對摩押、亞捫人聯軍時，透過禁食祈禱讚美獲神施行拯救（代下20:1-29）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B20%3A1-29&version=CUVMPT"
 type = "good"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神使列國恐懼約沙法，紛紛納貢（代下17:10-11）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B17%3A10-11&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神在基列的拉末戰場上，幫助約沙法（代下18:31）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B18%3A31&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神差先見耶戶責備約沙法幫助惡王亞哈（代下19:2-3）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B19%3A2-3&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神的靈感動雅哈悉預言神必為猶大爭戰，他們只需擺陣站著即可，神隨後派伏兵使敵軍自相殘殺（代下20:14-29）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B20%3A14-29&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉以利以謝預言約沙法因與亞哈謝合夥造船，神必破壞其船（代下20:35-37）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B20%3A35-37&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "非利士人和阿拉伯人向約沙法送禮物並納貢銀（代下17:11）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B17%3A11&version=CUVMPT"
 [[king.other_events.event]]
 name = "摩押、亞捫與西珥山人聯手進攻，最終因神差派伏兵而自相殘殺（代下20:1, 22-23）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B20%3A1%2C%2022-23&version=CUVMPT"
 
 [[king]]
 name = "約蘭"
@@ -830,30 +1025,39 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "娶亞哈之女為妻（王下8:16, 代下21:6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A16%2C%20%E4%BB%A3%E4%B8%8B21%3A6&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "行惡並殺害眾兄弟與首領（王下8:18, 代下21:4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A18%2C%20%E4%BB%A3%E4%B8%8B21%3A4&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "率兵往撒益去，要攻打圍困他的以東人，不過卻失敗了（王下 8:21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B%208%3A21&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "在猶大諸山建築丘壇，誘惑猶大人（代下 21:11）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B%2021%3A11&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神因與大衛所立的約，不願滅大衛的家（代下 21:7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B%2021%3A7&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉以利亞的信預言約蘭家必遭大災，且王必患腸疾而死，果真應驗（代下21:12-18）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B21%3A12-18&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "以東背叛猶大，脫離其權下並自立為王（王下8:20, 代下21:8-10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A20%2C%20%E4%BB%A3%E4%B8%8B21%3A8-10&version=CUVMPT"
 [[king.other_events.event]]
 name = "立拿背叛約蘭（王下8:22, 代下21:10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A22%2C%20%E4%BB%A3%E4%B8%8B21%3A10&version=CUVMPT"
 [[king.other_events.event]]
 name = "非利士、阿拉伯受神激動來攻擊約蘭，擄掠王宮財貨及王的妻子、兒女（代下21:16-17）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B21%3A16-17&version=CUVMPT"
 
 [[king]]
 name = "亞哈謝"
@@ -866,24 +1070,30 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "娶亞哈的女兒為妻（王下8:27）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A27&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "效法亞哈家，行耶和華眼中看為惡的事（王下8:27）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A27&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "與北國的約蘭王去基列的拉末打亞蘭王哈薛，結果約蘭王被打傷，因著去看望約蘭。結果被反叛的耶戶殺死，丟了性命。（王下8:28-29, 9:16, 27, 代下22:5-7）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A28-29%2C%209%3A16%2C%2027%2C%20%E4%BB%A3%E4%B8%8B22%3A5-7&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "其母亞她利雅（暗利的孫女）主謀指使他行惡（代下22:2-3）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B22%3A2-3&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "亞哈謝去見北國約蘭王而被耶戶所殺，這是出乎神（代下22:7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B22%3A7&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞蘭王哈薛在基列拉末與亞哈謝、約蘭交戰（王下8:28, 代下22:5）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B8%3A28%2C%20%E4%BB%A3%E4%B8%8B22%3A5&version=CUVMPT"
 
 [[king]]
 name = "亞她利雅"
@@ -896,13 +1106,16 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "亞她利雅為亞哈謝的母親，見其兒被耶戶殺死，起來剿滅猶大王室自立為王，後被祭司耶何耶大策劃推翻並處死（王下11:1-16, 代下22:10-23:15）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B11%3A1-16%2C%20%E4%BB%A3%E4%B8%8B22%3A10-23%3A15&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "亞哈謝的妹妹、祭司耶和耶大的妻約示巴，將亞哈謝的兒子約阿施從被殺的王子中偷出來，並且把約阿施和他的乳母藏在神的殿裡六年（王下11:2-3, 代下22:11-12）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B11%3A2-3%2C%20%E4%BB%A3%E4%B8%8B22%3A11-12&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "祭司耶何耶大使王與民與神立約，做上帝的民，又使王與民立約，因此，國民拆毀了巴力廟，打碎壇和像，又把巴力的祭司殺了（王下11:17-18, 代下23:16-17）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B11%3A17-18%2C%20%E4%BB%A3%E4%B8%8B23%3A16-17&version=CUVMPT"
 
 [[king]]
 name = "約阿施"
@@ -915,30 +1128,39 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "在祭司耶何耶大還在世時，行神眼中看為正的事（王下12:2, 代下24:1-13）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B12%3A2%2C%20%E4%BB%A3%E4%B8%8B24%3A1-13&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "修理聖殿（王下12:4-16, 代下24:4-14）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B12%3A4-16%2C%20%E4%BB%A3%E4%B8%8B24%3A4-14&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "在耶何耶大死後離棄神，聽從拜偶像之猶大首領的意見（代下24:17-18）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B24%3A17-18&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "殺害耶和耶大的兒子先知撒迦利亞，最後被臣僕所弒（王下12:20, 代下24:21-22, 25）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B12%3A20%2C%20%E4%BB%A3%E4%B8%8B24%3A21-22%2C%2025&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神差遣先知，引導猶大王及其臣僕歸回耶和華（代下24:19）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B24%3A19&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神的靈感動祭司耶何耶大的兒子撒迦利亞責備民違背誡命，王卻將他殺害（代下24:20-22）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B24%3A20-22&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "在亞蘭攻打約阿施時，神將猶大人交在亞蘭人手裡，為要懲罰猶大人離棄神（代下24:23-24）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B24%3A23-24&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞蘭王哈薛攻取迦特後打算來攻打耶路撒冷，後因約阿施將聖物與金子奉送而不來攻打（王下12:17-18）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B12%3A17-18&version=CUVMPT"
 [[king.other_events.event]]
 name = "撒迦利亞死後一年，亞蘭的軍兵來攻打約阿施，殺了民眾的眾首領，將財貨送給大馬士革王（代下24:23-24）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B24%3A23-24&version=CUVMPT"
 
 [[king]]
 name = "亞瑪謝"
@@ -951,33 +1173,42 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為正的事，不過心不專一（王下14:3）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A3&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "殺了殺他父王的臣僕，按摩西律法書上的命令，沒有治死殺王之人的兒子（王下14:5-6, 代下25:3-4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A5-6%2C%20%E4%BB%A3%E4%B8%8B25%3A3-4&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "聽從神人的建議，辭退軍兵裡的以色列人，在鹽谷擊敗以東（王下14:7, 代下25:11）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A7%2C%20%E4%BB%A3%E4%B8%8B25%3A11&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "殺了以東人後，把神像帶回來立為自己的神（代下25:14）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B25%3A14&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "拒絕先知的提醒（代下25:16）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B25%3A16&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "主動向北國以色列王約阿施挑起戰爭，卻被打敗，導致耶路撒冷城牆被拆，神殿裡的金銀和器皿被奪走，也被帶走人質（王下14:8-14, 代下25:17-24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A8-14%2C%20%E4%BB%A3%E4%B8%8B25%3A17-24&version=CUVMPT"
 type = "evil"
 
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神差神人勸阻亞瑪謝不要雇用以色列傭兵（代下25:7-9）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B25%3A7-9&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神差先知責備亞瑪謝拜以東神像，並預言神定意要滅他（代下25:15-16）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B25%3A15-16&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "以東在鹽谷被亞瑪謝擊殺一萬人，西拉城被攻取（王下14:7, 代下25:11）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B14%3A7%2C%20%E4%BB%A3%E4%B8%8B25%3A11&version=CUVMPT"
 
 [[king]]
 name = "烏西雅 / 亞撒利雅"
@@ -990,33 +1221,43 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為正的事（王下15:3, 代下26:4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A3%2C%20%E4%BB%A3%E4%B8%8B26%3A4&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "攻打非利士人、阿拉伯人和米烏尼人（代下26:6-7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B26%3A6-7&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "建築、城樓、望樓、挖井、並且發展農業（代下26:9-10）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B26%3A9-10&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "發展軍事，有善於爭戰的軍兵，並且還發明新機器增強國防（代下26:11-15）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B26%3A11-15&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "後因心高氣傲，強行進殿燒香，額上發出大痲瘋直到死日（王下15:5, 代下26:16-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A5%2C%20%E4%BB%A3%E4%B8%8B26%3A16-21&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神幫助烏西雅攻擊非利士人與阿拉伯人，使其極其強盛（代下26:7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B26%3A7&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神在烏西雅強行燒香時，降災使他額上發出大痲瘋（代下26:19-20）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B26%3A19-20&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "非利士數個城牆被猶大軍兵拆毀（代下26:6）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B26%3A6&version=CUVMPT"
 [[king.other_events.event]]
 name = "非利士人、阿拉伯人和米烏尼人被猶大軍兵攻擊（代下26:7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B26%3A7&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞捫人向烏西雅進貢（代下26:8）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B26%3A8&version=CUVMPT"
 
 [[king]]
 name = "約坦"
@@ -1029,23 +1270,29 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為正的事，效法父親所行（王下15:34, 代下27:2, 6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A34%2C%20%E4%BB%A3%E4%B8%8B27%3A2%2C%206&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "建立神殿的上門（代下27:2）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B27%3A2&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "建立城邑、營寨和高樓（代下27:3）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B27%3A3&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
 name = "打敗亞捫人，使他們進貢（代下27:5）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B27%3A5&version=CUVMPT"
 type = "mixed"
 
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞蘭王利汛和以色列王比加開始攻擊猶大（王下15:37）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B15%3A37&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞捫人戰敗後連續三年向約坦進貢銀子、小麥、大麥（代下27:5）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B27%3A5&version=CUVMPT"
 
 [[king]]
 name = "亞哈斯"
@@ -1058,35 +1305,46 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行耶和華眼中看為惡的事，效法以色列諸王所行（王下16:2-3, 代下28:1-2）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B16%3A2-3%2C%20%E4%BB%A3%E4%B8%8B28%3A1-2&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "拜巴力，使兒女經火，向偶像獻祭，並仿造大馬士革的偶像壇，亦向大馬士革神獻祭（王下16:3-4, 10-14, 代下28:2-4, 22-32）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B16%3A3-4%2C%2010-14%2C%20%E4%BB%A3%E4%B8%8B28%3A2-4%2C%2022-32&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "請求亞述王來幫忙打亞蘭跟以色列，自稱是亞述王的僕人和兒子，並且將神殿裡和王宮府裡的所有金銀都送給亞述王（王下16:7-9, 代下28:16-18）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B16%3A7-9%2C%20%E4%BB%A3%E4%B8%8B28%3A16-18&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "擅自更改獻祭的條例，關閉聖殿、毀壞聖器（王下16:15-18, 代下28:24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B16%3A15-18%2C%20%E4%BB%A3%E4%B8%8B28%3A24&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "在猶大各城建立邱壇，向別神燒香（代下28:25）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B28%3A25&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神將亞哈斯交在亞蘭王與以色列王手中受挫，許多居民被俘虜至大馬士革和撒瑪利亞（代下28:5-8）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B28%3A5-8&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神差先知俄德勸阻以色列軍兵虐待猶大俘虜，使俘虜得釋放（代下28:9-15）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B28%3A9-15&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神使以東人和非利士人來攻擊猶大，因為亞哈斯干犯耶和華（代下28:19）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B28%3A19&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞蘭王利汛和以色列王比加來打亞哈斯，卻未能勝他（王下16:5）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B16%3A5&version=CUVMPT"
 [[king.other_events.event]]
 name = "以東、非利士攻擊猶大並擄掠子民（代下28:17-18）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B28%3A17-18&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞述王提革拉毗列色受亞哈斯之賂，攻打大馬士革，殺了亞蘭王利汛，虜其居民，但隨後反而欺凌亞哈斯（王下16:7-9, 代下28:16-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B16%3A7-9%2C%20%E4%BB%A3%E4%B8%8B28%3A16-21&version=CUVMPT"
 
 
 [[king]]
@@ -1100,67 +1358,90 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為正的事，倚靠神（王下18:3, 5-6, 代下 29:2, 31:20-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B18%3A3%2C%205-6%2C%20%E4%BB%A3%E4%B8%8B%2029%3A2%2C%2031%3A20-21&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "廢除丘壇，打碎偶像和摩西所造的銅蛇（因那時以色列人向銅蛇燒香）（王下18:4, 代下31:1）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B18%3A4%2C%20%E4%BB%A3%E4%B8%8B31%3A1&version=CUVMPT"
 [[king.deeds.deed]]
 name = "不事奉亞述王，攻擊非利士人（王下18:7-8）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B18%3A7-8&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "希西家差人見亞述王求和，將神殿裡和王宮裡的銀子都給了亞述王，甚至把神殿門上的金子和自己包在柱上的金子都刮下來給了亞述王（王下18:13-16）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B18%3A13-16&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "當亞述王要來攻打耶路撒冷，希西家力圖自強，修築拆毀的城牆，堅固城池，並且製造許多軍器，也塞住塞外的泉源，並且鼓勵百姓要倚靠神（王下18:36, 代下32:1-8）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B18%3A36%2C%20%E4%BB%A3%E4%B8%8B32%3A1-8&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "在亞述軍圍困下與先知以賽亞一同禱告，神差使者殺亞述軍18萬5千人（王下19:14-35, 代下32:20-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B19%3A14-35%2C%20%E4%BB%A3%E4%B8%8B32%3A20-21&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "病危求神獲，得醫治並加增15年壽數，並且獲賜兆頭，日影後退十度（王下20:1-11, 代下32:24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B20%3A1-11%2C%20%E4%BB%A3%E4%B8%8B32%3A24&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "希西家獲賜兆頭後，並沒有報答神，因他心裡驕傲；但他後來有悔改，使得神的憤怒沒有在他的日子臨到（代下32:24-26）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B32%3A24-26&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "將他的寶庫以及所有一切的貴重物品給巴比倫的使者看，被以賽亞責罵（王下20:12-19）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B20%3A12-19&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "潔淨聖殿並且獻祭（代下29:1-35）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B29%3A1-35&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "召集子民守逾越節和除酵節，大有喜樂（代下30:1-27）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B30%3A1-27&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "恢復獻祭，派定祭司利未人的班次，使之供職（代下31:2-8）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B31%3A2-8&version=CUVMPT"
 type = "good"
 
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉以賽亞安慰希西家不要懼怕亞述王（王下19:6-7）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B19%3A6-7&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉以賽亞預言必保護耶路撒冷，並派使者在一夜間滅亞述軍18萬5千人，又賜給他們四境平安（王下19:6-7, 20-35, 代下32:20-22）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B19%3A6-7%2C%2020-35%2C%20%E4%BB%A3%E4%B8%8B32%3A20-22&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉以賽亞應許醫治希西家並加增其壽數，且賜下日影後退十度的兆頭（王下20:4-11, 代下32:24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B20%3A4-11%2C%20%E4%BB%A3%E4%B8%8B32%3A24&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "以賽亞預言希西家的後裔與財寶必被擄到巴比倫（王下20:16-18）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B20%3A16-18&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神感動猶大人遵從王的命令（代下30:12）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B30%3A12&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神賜給希西家許多的財產（代下32:27-29）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B32%3A27-29&version=CUVMPT"
 
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞述滅了以色列國（王下18:9-12）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B18%3A9-12&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞述王西拿基立攻取猶大諸堅固城，索要罰銀金子（王下18:13-15）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B18%3A13-15&version=CUVMPT"
 [[king.other_events.event]]
 name = "亞述王西拿基立差遣大軍到猶大國，他們對猶大國進行威脅（王下18:17-37, 代下32:9-19）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B18%3A17-37%2C%20%E4%BB%A3%E4%B8%8B32%3A9-19&version=CUVMPT"
 [[king.other_events.event]]
 name = "西拿基立因大軍被滅而回國，被其子所殺（王下19:35-37, 代下32:20-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B19%3A35-37%2C%20%E4%BB%A3%E4%B8%8B32%3A20-21&version=CUVMPT"
 [[king.other_events.event]]
 name = "巴比倫派遣使者送書信禮物訪問病癒的希西家（王下20:12, 代下32:31）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B20%3A12%2C%20%E4%BB%A3%E4%B8%8B32%3A31&version=CUVMPT"
 
 [[king]]
 name = "瑪拿西"
@@ -1173,28 +1454,36 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "重建希西家所毀壞的壇，為巴力、亞舍拉築壇、造偶像，侍奉天上的萬象，在神殿宇中築壇、立偶像（王下21:1-5, 7, 代下33:2-5, 7）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B21%3A1-5%2C%207%2C%20%E4%BB%A3%E4%B8%8B33%3A2-5%2C%207&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "使兒子經火，又觀兆，用法術，立交鬼的和行巫術的（王下21:6, 代下33:6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B21%3A6%2C%20%E4%BB%A3%E4%B8%8B33%3A6&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "引誘眾民行惡，使民陷在罪裡，又流許多無辜人的血（王下21:9, 16, 代下33:9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B21%3A9%2C%2016%2C%20%E4%BB%A3%E4%B8%8B33%3A9&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "被擄到巴比倫後極其自卑悔改，蒙神領回後廢除偶像，重修神的祭壇、獻祭，並且吩咐百姓事奉神（代下33:12-16）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B33%3A12-16&version=CUVMPT"
 type = "good"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉眾先知預言必降禍於耶路撒冷，將他們交在仇敵手中，因他們行神眼中看為惡的事（王下21:10-15）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B21%3A10-15&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神警戒瑪拿西和他的百姓，他們卻不聽，所以神使亞述王來攻擊他們，將瑪拿西擄到巴比倫去（代下33:10-11）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B33%3A10-11&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神在瑪拿西於巴比倫自卑禱告後，允准其請求，領他歸回國位（代下33:12-13）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B33%3A12-13&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "亞述將帥用鐃鉤和銅鏈鎖住瑪拿西，帶往巴比倫（代下33:11）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B33%3A11&version=CUVMPT"
 
 [[king]]
 name = "亞們"
@@ -1207,6 +1496,7 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "和他父親瑪拿西一樣，行耶和華眼中看為惡的事：拜偶像、離棄神（王下21:20-22, 代下33:22-23）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B21%3A20-22%2C%20%E4%BB%A3%E4%B8%8B33%3A22-23&version=CUVMPT"
 type = "evil"
 
 [[king]]
@@ -1220,33 +1510,42 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "主動修理聖殿（王下22:3-6, 代下34:8-13）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B22%3A3-6%2C%20%E4%BB%A3%E4%B8%8B34%3A8-13&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "修理聖殿的過程中重獲律法書，發現神向他們大發烈怒的原因，是因列祖沒有聽從書上的言語，因此自卑悔改（王下22:8-13, 代下34:14-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B22%3A8-13%2C%20%E4%BB%A3%E4%B8%8B34%3A14-21&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "將律法書唸給百姓聽，教導他們要盡心盡性順服神，遵行神的律法（王下23:1-3, 代下34:29-32）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A1-3%2C%20%E4%BB%A3%E4%B8%8B34%3A29-32&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "燒掉原本在神殿裡的巴力和亞舍拉像；拆毀神殿裡孌童的屋子；廢去邱壇，並殺掉邱壇的祭司，廢去拜偶像、拜星象的祭司；不許人民使兒女經火；把許多的偶像及其邱壇都打碎、污穢；打碎拜金牛犢的壇；除掉交鬼的、行巫術的、與家中的神像和偶像（王下23:4-20, 24, 代下34:3-7, 33）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A4-20%2C%2024%2C%20%E4%BB%A3%E4%B8%8B34%3A3-7%2C%2033&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "守了空前盛大的逾越節（王下23:21-23, 代下35:1-19）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A21-23%2C%20%E4%BB%A3%E4%B8%8B35%3A1-19&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "後在米吉多攔阻埃及王時被埃及王尼哥重傷而死（王下23:29-30, 代下35:20-24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A29-30%2C%20%E4%BB%A3%E4%B8%8B35%3A20-24&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神藉女先知戶勒大預言必照律法書所言降禍，但因約西亞敬服神，必使他平平安安歸到墳墓（王下22:15-20，代下34:23-28）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B22%3A15-20%2C%E4%BB%A3%E4%B8%8B34%3A23-28&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "因瑪拿西的罪惹動神，神向猶大的怒氣仍不止息，決定將猶大人從祂面前趕出，並且棄掉耶路撒冷和祂的聖殿（王下23:26-27）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A26-27&version=CUVMPT"
 
 
 [king.other_events]
 [[king.other_events.event]]
 name = "埃及王法老尼哥上路欲攻擊亞述，在米吉多殺了試圖攔阻的約西亞（王下23:29-30, 代下35:20-24）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A29-30%2C%20%E4%BB%A3%E4%B8%8B35%3A20-24&version=CUVMPT"
 
 [[king]]
 name = "約哈斯"
@@ -1259,13 +1558,16 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為惡的事，效法他列祖所行（王下23:31-32）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A31-32&version=CUVMPT"
 type = "evil"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "埃及王尼哥廢掉約哈斯，把他拘禁，並且罰猶大國金銀，還將王帶往埃及（王下23:33-34, 代下36:3-4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A33-34%2C%20%E4%BB%A3%E4%B8%8B36%3A3-4&version=CUVMPT"
 [[king.other_events.event]]
 name = "埃及王尼哥使以利亞敬接續約西亞做王，又把他改名叫約雅敬（王下23:34）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A34&version=CUVMPT"
 
 [[king]]
 name = "約雅敬"
@@ -1278,27 +1580,35 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "將金銀給法老，遵法老的命向國民徵取金銀（王上23:35）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A23%3A35&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "行神眼中看為惡的事，效法他列祖所行（王下23:37, 代下36:5）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B23%3A37%2C%20%E4%BB%A3%E4%B8%8B36%3A5&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "服事巴比倫王尼布甲尼撒三年後背叛他（王下24:1）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A1&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神使迦勒底、亞蘭、摩押、亞捫人的軍隊來攻擊並毀滅猶大，應驗神藉眾先知所說的話（王下24:2-4）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A2-4&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "巴比倫王尼布甲尼撒上來攻擊，用銅鏈鎖著猶大王約雅敬，要把他帶到巴比倫去（王下24:1, 代下36:6）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A1%2C%20%E4%BB%A3%E4%B8%8B36%3A6&version=CUVMPT"
 [[king.other_events.event]]
 name = "迦勒底、亞蘭、摩押、亞捫人的軍隊來毀滅猶大（王下24:2）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A2&version=CUVMPT"
 [[king.other_events.event]]
 name = "巴比倫王奪去埃及王所管之地（王下24:7）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A7&version=CUVMPT"
 [[king.other_events.event]]
 name = "巴比倫王尼布甲尼撒將神殿裡的器皿帶到巴比倫，放在別神的廟裡（代下36:7）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B36%3A7&version=CUVMPT"
 
 
 [[king]]
@@ -1312,21 +1622,27 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行耶和華眼中看為惡的事，效法他父親所行（王下24:9, 代下36:9）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A9%2C%20%E4%BB%A3%E4%B8%8B36%3A9&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "作王3個月即向巴比倫投降，與首領、工匠、勇士、官員、太監和後宮一同被擄（王下24:10-16）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A10-16&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "被擄37年後獲釋，終身在巴比倫王面前吃飯（王下25:27-30）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B25%3A27-30&version=CUVMPT"
 type = "evil"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "巴比倫王尼布甲尼撒圍困耶路撒冷，拿住約雅斤，擄走王室、大能勇士、木匠鐵匠及王宮和神殿中的寶物（王下24:10-16, 代下36:10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A10-16%2C%20%E4%BB%A3%E4%B8%8B36%3A10&version=CUVMPT"
 [[king.other_events.event]]
 name = "巴比倫王尼布甲尼撒立約雅斤的叔叔瑪探雅代替他做王，改他的名叫西底加（王下24:17, 代下36:10）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A17%2C%20%E4%BB%A3%E4%B8%8B36%3A10&version=CUVMPT"
 [[king.other_events.event]]
 name = "巴比倫王以未米羅達釋放約雅斤並厚待他（王下25:27-30）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B25%3A27-30&version=CUVMPT"
 
 [[king]]
 name = "西底家"
@@ -1339,32 +1655,44 @@ kingdom = "south"
 [king.deeds]
 [[king.deeds.deed]]
 name = "行神眼中看為惡的事，效法約雅敬所行的一切（王下24:19, 代下36:12）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A19%2C%20%E4%BB%A3%E4%B8%8B36%3A12&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "背叛巴比倫，導致耶路撒冷被焚、聖殿被毀。他在利比拉受審，他的眾子在眼前被殺，眼被剜後送往巴比倫（王下25:1-27, 代下36:11-19）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B25%3A1-27%2C%20%E4%BB%A3%E4%B8%8B36%3A11-19&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
 name = "祭司和百姓污穢神的殿（代下36:14）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B36%3A14&version=CUVMPT"
 type = "evil"
 
 [king.god_deeds]
 [[king.god_deeds.deed]]
 name = "神將自己的人民從自己面前趕出（王下24:20）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B24%3A20&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉先知耶利米勸諫西底家，但他不聽（代下36:12）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B36%3A12&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神因愛惜子民，從早起來差遣使者警戒，但民卻戲笑藐視，導致神憤怒發作（代下36:15-16）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B36%3A15-16&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神藉迦勒底人攻擊猶大、毀滅聖殿與城牆，應驗藉耶利米所說地享安息七十年的話（代下36:17-21）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B36%3A17-21&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神激動波斯王，使他在猶大的耶路撒冷為祂建造殿宇（代下36:22-23）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B36%3A22-23&version=CUVMPT"
 
 [king.other_events]
 [[king.other_events.event]]
 name = "巴比倫王尼布甲尼撒因西底家背叛而率全軍圍困耶路撒冷，最終焚毀聖殿與城牆，殺害王子，剜去西底家眼睛並將百姓遷徙擄往巴比倫（王下25:1-12, 代下36:17-20）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B25%3A1-12%2C%20%E4%BB%A3%E4%B8%8B36%3A17-20&version=CUVMPT"
 [[king.other_events.event]]
 name = "巴比倫王殺掉了大祭司、副祭司、三個把門的，以及猶大國一個管理兵丁的官、以及其他人（王下25:18-21）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8B25%3A18-21&version=CUVMPT"
 [[king.other_events.event]]
 name = "巴比倫王將王宮和神殿裡的財寶帶到巴比倫去（代下36:18）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B36%3A18&version=CUVMPT"
 [[king.other_events.event]]
 name = "波斯王准許猶大人民回去耶路撒冷，為神建造殿宇（代下36:23）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B36%3A23&version=CUVMPT"

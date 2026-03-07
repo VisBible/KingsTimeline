@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>南北兩國君王時間線</title>
+    <title>聖經君王時序</title>
     <style>
         * {
             margin: 0;
@@ -408,6 +408,15 @@
             color: #2e7d32;
             font-weight: bold;
         }
+
+        .verse-link {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        .verse-link:hover {
+            opacity: 0.85;
+        }
         
         .legend {
             display: flex;
@@ -418,6 +427,7 @@
             background: #f8f9fa;
             border-radius: 10px;
             flex-wrap: wrap;
+            font-size: 1em;
         }
         
         .legend-item {
@@ -440,7 +450,7 @@
             background: #e3f2fd;
             border-radius: 5px;
             color: #1976d2;
-            font-size: 0.9em;
+            font-size: 1.1em;
         }
         
         /* 註釋區域 */
@@ -453,12 +463,13 @@
         }
         
         .notes-section h3 {
-            font-size: 1.2em;
+            font-size: 1em;
             margin-bottom: 15px;
             color: #333;
         }
         
-        .notes-section ul {
+        .notes-section ol {
+            font-size: 0.85em;
             list-style-position: inside;
             line-height: 1.8;
             color: #555;
@@ -473,7 +484,7 @@
             background: #000000;
             color: #ffffff;
             margin-top: 60px;
-            padding: 40px 20px 20px 20px;
+            padding: 50px 20px 30px 20px;
         }
         
         .footer-content {
@@ -487,6 +498,7 @@
         
         .footer-section {
             margin-bottom: 15px;
+            max-width: 430px;
         }
         
         .footer-section h4 {
@@ -522,6 +534,7 @@
             text-align: center;
             width: 100%;
             margin-top: 20px;
+            margin-bottom: 20px;
             font-size: 0.85em;
             color: #888;
         }
@@ -586,7 +599,7 @@
         <h1>聖經君王時序</h1>
         
         <div class="keyboard-hint">
-            💡 點擊任何君王查看詳情 | ⌨️ 彈出視窗中使用鍵盤方向鍵導航：← → 切換君王 | ↑ ↓ 切換北國/南國 | Esc 關閉
+            💡 點擊任何君王查看詳情 | ⌨️ 彈出視窗中使用鍵盤方向鍵導航：← → 切換君王 ↑ ↓ 切換北國/南國 | Esc 關閉
         </div>
         
         <div class="legend">
@@ -636,12 +649,12 @@
         
         <!-- 註釋區域 -->
         <div class="notes-section">
-            <h3>📝 註釋</h3>
-            <ul>
-                <li>君王作王年份引用自 NLT Study Bible</li>
-                <li>事件與經文引用來自列王紀與歷代志</li>
+            <h3>📝 Notes</h3>
+            <ol>
+                <li>君王作王年份引用自 <i>Holy Bible</i>, New Living Translation, copyright © 1996, 2004, 2007 by Tyndale House Foundation. Used by permission of Tyndale House Publishers, Inc., Carol Stream, Illinois 60188. All rights reserved.</li>
+                <li>事件經文引用自：《列王紀上》、《列王紀下》、《歷代志上》、《歷代志下》</li>
                 <li>並未收錄所有的先見、先知、神人。</li>
-            </ul>
+            </ol>
         </div>
         
     </div>
@@ -651,22 +664,22 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>📩 聯絡資訊</h4>
-                <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                <p>Email: <a href="mailto:alicehsuwrites@gmail.com">alicehsuwrites@gmail.com</a></p>
             </div>
             
             <div class="footer-divider"></div>
             
             <div class="footer-section">
                 <h4>ℹ︎ 關於</h4>
-                <p>這是一個幫助理解聖經歷史的視覺化工具</p>
+                <p>這是幫助理解聖經歷史的視覺化工具，由 <a href="https://alicehsu.blog/zh-tw/about" target="_blank" rel="noopener noreferrer">Alice Hsu</a> 與 <a href="https://mhyeh.github.io" target="_blank" rel="noopener noreferrer">Samuel Yeh</a> 基督徒夫婦共同製作，若有任何問題或建議，歡迎來信。</p>
+            </div>
+
+            <div class="footer-section">
+                <h4> 版權</h4>
+                <p>© 2025 聖經君王時序保留所有權利</p>
             </div>
             
-            
             </div>
-        </div>
-        
-        <div class="copyright">
-            <p>© 2025 聖經君王時序. 保留所有權利.</p>
         </div>
     </div>
     
@@ -686,20 +699,41 @@
             const end = Number(t.end);
             const duration = start - end;
             const events = [];
+            function toEventHtml(text, cssClass, link) {
+                if (!link) {
+                    return '<span class="' + cssClass + '">' + escapeHtml(text) + '</span>';
+                }
+
+                // 只將最後一組括號內的經節做成可點擊連結
+                const match = text.match(/^(.*?)[（(]([^（）()]*)[）)]\s*$/);
+                if (!match) {
+                    return '<span class="' + cssClass + '">' + escapeHtml(text) + '</span>';
+                }
+
+                const prefix = match[1];
+                const verse = match[2];
+                const safeLink = escapeHtml(link);
+                const body = escapeHtml(prefix) +
+                    '（<a class="verse-link" href="' + safeLink + '" target="_blank" rel="noopener noreferrer">' +
+                    escapeHtml(verse) + '</a>）';
+
+                return '<span class="' + cssClass + '">' + body + '</span>';
+            }
+
             const deeds = (t.deeds && t.deeds.deed) ? (Array.isArray(t.deeds.deed) ? t.deeds.deed : [t.deeds.deed]) : [];
             deeds.forEach(function(d) {
                 let cls = 'evil-deed';
                 if (d.type === 'good') cls = 'good-deed';
                 else if (d.type === 'Mixed' || d.type === 'mixed') cls = 'mixed-deed';
-                events.push('<span class="' + cls + '">' + escapeHtml(d.name) + '</span>');
+                events.push(toEventHtml(d.name, cls, d.link));
             });
             const godDeeds = (t.god_deeds && t.god_deeds.deed) ? (Array.isArray(t.god_deeds.deed) ? t.god_deeds.deed : [t.god_deeds.deed]) : [];
             godDeeds.forEach(function(d) {
-                events.push('<span class="god-deed">' + escapeHtml(d.name) + '</span>');
+                events.push(toEventHtml(d.name, 'god-deed', d.link));
             });
             const otherEvents = (t.other_events && t.other_events.event) ? (Array.isArray(t.other_events.event) ? t.other_events.event : [t.other_events.event]) : [];
             otherEvents.forEach(function(ev) {
-                events.push('<span class="other-event">' + escapeHtml(ev.name) + '</span>');
+                events.push(toEventHtml(ev.name, 'other-event', ev.link));
             });
             return {
                 name: t.name,
@@ -1195,6 +1229,28 @@
             const box = e.target.closest('.king-box');
             if (box && !box.classList.contains('empty') && box.getAttribute('data-events-full')) {
                 openKingModal({ currentTarget: box });
+            }
+        });
+
+        // 小卡片上的經節連結：不跳轉，只開啟 modal；
+        // modal 內的經節連結：允許新分頁跳轉
+        document.addEventListener('click', function(e) {
+            const verseLink = e.target.closest('a.verse-link');
+            if (!verseLink) return;
+
+            const inModalCard = verseLink.closest('#modal-card');
+            if (inModalCard) {
+                // 在 modal 內允許連結正常運作，但避免點擊事件影響其他容器
+                e.stopPropagation();
+                return;
+            }
+
+            const kingBox = verseLink.closest('.king-box');
+            if (kingBox && !kingBox.classList.contains('empty')) {
+                // 在小卡上點到連結時，阻止外連，改為開啟放大卡
+                e.preventDefault();
+                e.stopPropagation();
+                openKingModal({ currentTarget: kingBox });
             }
         });
         
