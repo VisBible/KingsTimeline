@@ -4,37 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>聖經君王時序</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        :root {
+            --bg: #f8f6f1;
+            --card-bg: #fff;
+            --accent: #8b6914;
+            --accent-light: #c9a227;
+            --text: #2c2c2c;
+            --text-muted: #5c5c5c;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --radius: 12px;
+        }
         
         body {
-            font-family: 'Microsoft YaHei', '微軟正黑體', Arial, sans-serif;
-            background: #f5f5f5;
+            font-family: 'Noto Sans TC', 'Microsoft YaHei', '微軟正黑體', sans-serif;
+            background: var(--bg);
+            color: var(--text);
             padding: 40px 20px 0 20px;
+            line-height: 1.6;
         }
         
         .container {
             max-width: 100%;
             margin: 0 auto 0 auto;
-            background: white;
+            background: var(--card-bg);
             padding: 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: var(--shadow);
+            border-radius: var(--radius);
+            border: 1px solid rgba(139, 105, 20, 0.12);
         }
         
         h1 {
+            font-family: 'Noto Serif TC', serif;
             text-align: center;
             font-size: 2.5em;
+            font-weight: 700;
             margin-bottom: 20px;
-            color: #333;
+            color: var(--accent);
+            letter-spacing: 0.02em;
         }
         
         .subtitle {
             text-align: center;
-            color: #666;
+            color: var(--text-muted);
             margin-bottom: 40px;
             font-size: 1.1em;
         }
@@ -117,7 +138,7 @@
             position: sticky;
             left: 0;
             z-index: 10;
-            background: white;
+            background: var(--card-bg);
             padding-right: 20px;
             box-shadow: 2px 0 5px rgba(0,0,0,0.05);
             display: flex;
@@ -261,7 +282,7 @@
         .king-box {
             text-align: center;
             padding: 12px 10px;
-            background: white;
+            background: var(--card-bg);
             border: 2px solid #ddd;
             border-radius: 8px;
             height: 240px;
@@ -365,7 +386,7 @@
         }
         
         .modal-card {
-            background: white;
+            background: var(--card-bg);
             border-radius: 12px;
             padding: 24px;
             width: 70vw;
@@ -424,10 +445,11 @@
             gap: 30px;
             margin: 30px 0;
             padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
+            background: rgba(139, 105, 20, 0.06);
+            border-radius: var(--radius);
             flex-wrap: wrap;
             font-size: 1em;
+            color: var(--text);
         }
         
         .legend-item {
@@ -447,9 +469,9 @@
             text-align: center;
             margin-top: 20px;
             padding: 15px;
-            background: #e3f2fd;
-            border-radius: 5px;
-            color: #1976d2;
+            background: rgba(201, 162, 39, 0.15);
+            border-radius: 8px;
+            color: var(--accent);
             font-size: 1.1em;
         }
         
@@ -457,32 +479,34 @@
         .notes-section {
             margin-top: 50px;
             padding: 25px;
-            background: #f9f9f9;
-            border-left: 4px solid #666;
-            border-radius: 5px;
+            background: rgba(139, 105, 20, 0.06);
+            border-left: 4px solid var(--accent-light);
+            border-radius: 8px;
         }
         
         .notes-section h3 {
+            font-family: 'Noto Serif TC', serif;
             font-size: 1em;
+            font-weight: 600;
             margin-bottom: 15px;
-            color: #333;
+            color: var(--text);
         }
         
         .notes-section ol {
             font-size: 0.85em;
             list-style-position: inside;
             line-height: 1.8;
-            color: #555;
+            color: var(--text-muted);
         }
         
         .notes-section li {
             margin-bottom: 8px;
         }
         
-        /* Footer - 黑色背景，白色字體 */
+        /* Footer - 與首頁風格一致 */
         .footer {
-            background: #000000;
-            color: #ffffff;
+            background: var(--bg);
+            color: var(--text-muted);
             margin-top: 60px;
             padding: 50px 20px 30px 20px;
         }
@@ -502,31 +526,33 @@
         }
         
         .footer-section h4 {
+            font-family: 'Noto Serif TC', serif;
             font-size: 1em;
+            font-weight: 600;
             margin-bottom: 8px;
-            color: #ffffff;
+            color: var(--text);
         }
         
         .footer-section p {
             font-size: 0.9em;
             line-height: 1.6;
-            color: #cccccc;
+            color: var(--text-muted);
         }
         
         .footer-section a {
-            color: #4fc3f7;
+            color: var(--accent);
             text-decoration: none;
         }
         
         .footer-section a:hover {
-            color: #81d4fa;
+            color: var(--accent-light);
             text-decoration: underline;
         }
         
         .footer-divider {
             width: 60%;
             height: 1px;
-            background: #444;
+            background: rgba(139, 105, 20, 0.2);
             margin: 15px 0;
         }
         
@@ -536,7 +562,7 @@
             margin-top: 20px;
             margin-bottom: 20px;
             font-size: 0.85em;
-            color: #888;
+            color: var(--text-muted);
         }
         
         @media (min-width: 768px) {
