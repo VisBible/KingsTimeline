@@ -78,7 +78,7 @@ en = "Jonah"
 start = 793
 end = 753
 kingdom = "north"
-kings = ["耶羅波安二世"]
+kings = ["耶羅波安二世", "米拿現"]
 ref = "王下14:25; 拿1:1"
 
 [[prophet]]
@@ -87,7 +87,7 @@ en = "Amos"
 start = 767
 end = 753
 kingdom = ["north", "south"]
-kings = ["烏西雅", "耶羅波安二世"]
+kings = ["耶羅波安二世", "米拿現"]
 ref = "摩1:1"
 
 [[prophet]]
@@ -96,7 +96,7 @@ en = "Hosea"
 start = 753
 end = 715
 kingdom = ["north", "south"]
-kings = ["烏西雅", "約坦", "亞哈斯", "希西家", "耶羅波安二世"]
+kings = ["耶羅波安二世", "何細亞"]
 ref = "何1:1"
 
 [[prophet]]
@@ -151,7 +151,7 @@ en = "Habakkuk"
 start = 609
 end = 597
 kingdom = "south"
-kings = ["約雅敬"]
+kings = ["約西亞", "約雅敬"]
 ref = "哈1:1"
 
 [[prophet]]
@@ -170,3 +170,9 @@ name = "以西結"
 en = "Ezekiel"
 kingdom = "south"
 kings = ["西底家"]
+
+[[prophet]]
+name = "但以理"
+en = "Daniel"
+kingdom = "south"
+kings = ["約雅敬", "西底家"]
