@@ -122,6 +122,25 @@
             min-width: 0;
             display: flex;
             align-items: stretch;
+            padding-bottom: 10px; /* 給捲軸留點空間 */
+        }
+        
+        /* 強制顯示橫向捲軸 (WebKit) */
+        .outer-scroll::-webkit-scrollbar {
+            height: 12px;
+            display: block;
+        }
+        .outer-scroll::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 6px;
+        }
+        .outer-scroll::-webkit-scrollbar-thumb {
+            background: #c1b398;
+            border-radius: 6px;
+            border: 2px solid #f0f0f0;
+        }
+        .outer-scroll::-webkit-scrollbar-thumb:hover {
+            background: #a69674;
         }
         
         .outer-scroll-content {
@@ -666,7 +685,7 @@
         <h1>聖經君王時序</h1>
         
         <div class="keyboard-hint">
-            💡 點擊任何君王查看詳情 | ⌨️ 彈出視窗中使用鍵盤方向鍵導航：← → 切換君王 ↑ ↓ 切換北國/南國 | Esc 關閉
+            💡 點擊君王查看詳情 | 可用卷軸拖曳左右 | ⌨️ 彈出視窗中可使用鍵盤方向鍵：← → 切換君王 ↑ ↓ 切換北國/南國 | Esc 關閉
         </div>
         
         <div class="legend">
