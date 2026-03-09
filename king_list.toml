@@ -16,16 +16,16 @@ name = "將約櫃運往耶路撒冷，過程中烏撒伸手扶櫃被擊殺而一
 link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A13%3A1-14&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
-name = "數次擊敗非利士人，制伏摩押、亞蘭、以東、亞們、亞瑪力、拉巴（代上14:8-16, 18:1-13, 19, 20）"
-link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A14%3A8-16%2C%2018%3A1-13%2C%2019%2C%2020&version=CUVMPT"
+name = "數次擊敗非利士人，制伏摩押、亞蘭、以東、亞們、亞瑪力、拉巴（代上14:8-16, 18:1-13, 19:1-20:8）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A14%3A8-16%2C%2018%3A1-13%2C%2019%3A1-20%3A8&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
-name = "有心為神建殿，神因其流人血過多而不許，命所羅門建造（代上17:1-15, 22:8）"
-link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A17%3A1-15%2C%2022%3A8&version=CUVMPT"
+name = "有心為神建殿，神因其流人血過多而不許，命所羅門建造（代上17:1-15, 22:1-9）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A17%3A1-15%2C%2022%3A1-9&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
-name = "為聖殿預備極其豐富的金、銀、銅、鐵、木石等材料（代上22:1-13, 28, 29:1-9）"
-link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A22%3A1-13%2C%2028%2C%2029%3A1-9&version=CUVMPT"
+name = "為聖殿預備極其豐富的金、銀、銅、鐵、木石等材料（代上22:1-13, 28:1-29:9）"
+link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A22%3A1-13%2C%2028%3A1-29%3A9&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "因數點百姓得罪神，引發三日瘟疫，後在阿珥楠禾場築壇獻祭使災止住（代上21）"
@@ -129,24 +129,24 @@ name = "作箴言三千句、詩歌一千零五首（王上4:32）"
 link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A4%3A32&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
-name = "耗時 7 年建成耶和華的聖殿（王上6:38，代下3）"
-link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A6%3A38%2C%E4%BB%A3%E4%B8%8B3&version=CUVMPT"
+name = "耗時 7 年建成耶和華的聖殿（王上6:38）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A6%3A38&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "耗時 13 年建成自己的宮室（王上7:1）"
 link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A7%3A1&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
-name = "差遣人去推羅召來戶蘭，製作聖殿的各樣設備（王上7:13-51，代下2:7-14,4）"
-link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A7%3A13-51%2C%E4%BB%A3%E4%B8%8B2%3A7-14%2C4&version=CUVMPT"
+name = "差遣人去推羅召來戶蘭，製作聖殿的各樣設備（王上7:13-45, 代下2:7-14, 4:1-16）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A7%3A13-45%2C%20%E4%BB%A3%E4%B8%8B2%3A7-14%2C%204%3A1-16&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "將約櫃從大衛城運進聖殿，神的榮光充滿這殿（王上8:1-11，代下5:2-14）"
 link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A8%3A1-11%2C%E4%BB%A3%E4%B8%8B5%3A2-14&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
-name = "王和眾人在神面前奉獻聖殿，甚至因銅壇太小、容不下脂油，而將殿前院子分別為聖來獻祭（王上8:62-64，代下7:1-10）"
-link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A8%3A62-64%2C%E4%BB%A3%E4%B8%8B7%3A1-10&version=CUVMPT"
+name = "王和眾人在神面前奉獻聖殿，甚至因銅壇太小、容不下脂油，而將殿前院子分別為聖來獻祭（王上8:62-64, 代下7:4-7）"
+link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A8%3A62-64%2C%20%E4%BB%A3%E4%B8%8B7%3A4-7&version=CUVMPT"
 type = "good"
 [[king.deeds.deed]]
 name = "把加利利的二十座城給推羅王希蘭（王上9:10-13）"
@@ -161,7 +161,7 @@ name = "所羅門用金子錘出擋牌、盾牌，並且用象牙製造寶座。
 link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A10%3A16-21&version=CUVMPT"
 type = "evil"
 [[king.deeds.deed]]
-name = "所羅門拿希蘭回送（退貨）的那些城邑，使以色列人居住在那裡；他又在各地建造了積貨城（代下 8:2-6）。"
+name = "所羅門拿希蘭回送的城邑，使以色列人居住在那裡；他又在各地建造了積貨城（代下 8:2-6）。"
 link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B%208%3A2-6&version=CUVMPT"
 type = "mixed"
 [[king.deeds.deed]]
@@ -179,19 +179,19 @@ type = "evil"
 name = "神使所羅門在以色列眾人眼前甚為尊大、極其威嚴，勝過他以前的以色列王。（代上29:25）"
 link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8A29%3A25&version=CUVMPT"
 [[king.god_deeds.deed]]
-name = "神在基遍在夢中向所羅門顯現，賜予他前無古人、後無來者的智慧，以及富足與尊榮。並且告訴他，若效法他父親大衛遵行神的道，神會使他長壽。（王上3:5-14，代下1:7-12）"
+name = "神在基遍在夢中向所羅門顯現，賜予他前無古人、後無來者的智慧，以及富足與尊榮。並且告訴他，若效法他父親大衛遵行神的道，神會使他長壽。（王上3:5-14, 代下1:7-12）"
 link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A3%3A5-14%2C%E4%BB%A3%E4%B8%8B1%3A7-12&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神告訴所羅門，若他遵行神的律例、遵從神的誡命，上帝就會應驗祂向大衛的應許，必住在以色列人中間，不丟棄以色列民（王上 6:11-13）"
 link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A%206%3A11-13&version=CUVMPT"
 [[king.god_deeds.deed]]
-name = "聖殿完工運入約櫃時，神的榮光充滿殿中，使祭司不能站立供職（王上8:10-11，代下5:13-14）"
+name = "聖殿完工運入約櫃時，神的榮光充滿殿中，使祭司不能站立供職（王上8:10-11, 代下5:13-14）"
 link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A8%3A10-11%2C%E4%BB%A3%E4%B8%8B5%3A13-14&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "所羅門禱告後，神使火從天降下燒盡燔祭，神的榮光再次充滿殿宇，祭司甚至不能進殿（代下7:1-2）"
 link = "https://www.biblegateway.com/passage/?search=%E4%BB%A3%E4%B8%8B7%3A1-2&version=CUVMPT"
 [[king.god_deeds.deed]]
-name = "神二次向所羅門顯現，應許若遵守律法必堅固國位，若離棄神則必剪除以色列人（王上9:2-9，代下7:12-22）"
+name = "神二次向所羅門顯現，應許若遵守律法必堅固國位，若離棄神則必剪除以色列人（王上9:2-9, 代下7:12-22）"
 link = "https://www.biblegateway.com/passage/?search=%E7%8E%8B%E4%B8%8A9%3A2-9%2C%E4%BB%A3%E4%B8%8B7%3A12-22&version=CUVMPT"
 [[king.god_deeds.deed]]
 name = "神因所羅門晚年背離，向他發怒，說必將他的國奪回，賜給他的臣子。但因大衛的緣故，這事要在他兒子手中發生，並且要留一個支派給他的兒子（王上11:9-13)"
