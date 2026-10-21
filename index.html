@@ -683,6 +683,135 @@
                 gap: 8px;
             }
         }
+
+        /* ===== 新手導覽 =====
+           #tour-dim is a single SVG covering the viewport: one dim rect, masked by a <mask> that
+           holds one <rect> per currently-highlighted element ("holes"). This is deliberate — an
+           earlier version gave EACH hole its own box-shadow-on-9999px-spread div, which breaks the
+           moment there's more than one hole at once: each div's shadow re-covers every OTHER div's
+           hole wherever that hole isn't also ITS OWN hole, so whichever div paints last silently
+           cancels the others out (visibly: holes fighting, flickering, landing in the wrong place).
+           A single shared mask has no such ordering problem, and naturally reads as "fully dim" when
+           it holds zero holes, instead of "fully see-through" (no box-shadow element = no dimming
+           at all) the way the old per-hole-div version did. */
+        #tour-dim {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 500;
+            pointer-events: none;
+            display: none;
+        }
+        #tour-dim.active { display: block; }
+        #tour-card {
+            position: fixed;
+            z-index: 501;
+            max-width: min(300px, calc(100vw - 32px));
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 18px 20px;
+            box-shadow: 0 10px 36px rgba(0,0,0,.35);
+            border: 1px solid rgba(139, 105, 20, .25);
+            pointer-events: auto;
+            transition: top .35s ease, left .35s ease;
+        }
+        #tour-card .tour-step-label {
+            font-size: .72em;
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: .04em;
+            margin-bottom: 6px;
+        }
+        #tour-card h3 {
+            margin: 0 0 8px;
+            font-size: 1.05em;
+            color: var(--text);
+            font-family: 'Noto Serif TC', serif;
+        }
+        #tour-card p {
+            margin: 0 0 14px;
+            font-size: .85em;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        #tour-card .tour-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+        #tour-dots { display: flex; gap: 5px; }
+        #tour-dots span {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #e0d7bd;
+        }
+        #tour-dots span.on { background: var(--accent); }
+        .tour-btns { display: flex; gap: 6px; }
+        .tour-btn {
+            border: none;
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: .8em;
+            cursor: pointer;
+            background: #f0e6c8;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .tour-btn.primary { background: var(--accent); color: #fff; }
+        .tour-skip {
+            background: none;
+            border: none;
+            color: #999;
+            font-size: .78em;
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 0;
+        }
+        /* 僅在導覽小卡內使用的輔助列 */
+        .tour-kbd-row {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin: 10px 0 2px;
+            font-size: .78em;
+            color: var(--accent);
+        }
+        .tour-kbd-row kbd {
+            background: #f0e6c8;
+            border: 1px solid #d9c383;
+            border-radius: 4px;
+            padding: 1px 6px;
+            font-size: .9em;
+        }
+        .tour-legend-row {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin: 10px 0 2px;
+            font-size: .78em;
+        }
+        .tour-legend-row .legend-item { gap: 6px; }
+        .tour-legend-row .legend-box { width: 11px; height: 11px; }
+        #tour-replay {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 300;
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            border-radius: 999px;
+            padding: 10px 16px;
+            font-size: .85em;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(0,0,0,.25);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
     </style>
 </head>
 <body>
@@ -788,7 +917,31 @@
     <div class="modal-overlay" id="modal-overlay">
         <div class="modal-card" id="modal-card"></div>
     </div>
-    
+
+    <!-- 新手導覽 -->
+    <button id="tour-replay" title="重新開始導覽">↻ 導覽教學</button>
+    <svg id="tour-dim" aria-hidden="true">
+        <defs>
+            <mask id="tour-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100%" height="100%">
+                <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+            </mask>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="rgba(20,16,8,0.55)" mask="url(#tour-mask)"/>
+    </svg>
+    <div id="tour-card" style="display:none">
+        <div class="tour-step-label" id="tour-step-label">步驟 1 / 6</div>
+        <h3 id="tour-title"></h3>
+        <p id="tour-body"></p>
+        <div class="tour-actions">
+            <div id="tour-dots"></div>
+            <div class="tour-btns">
+                <button class="tour-skip" id="tour-skip-btn">跳過導覽</button>
+                <button class="tour-btn" id="tour-prev-btn">上一步</button>
+                <button class="tour-btn primary" id="tour-next-btn">下一步</button>
+            </div>
+        </div>
+    </div>
+
     <script type="module">
         function escapeHtml(str) {
             const div = document.createElement('div');
@@ -1450,10 +1603,390 @@
                     currentNav.col = 0;
                     updateFocusedBox();
                 }
+                document.dispatchEvent(new CustomEvent('visbible:ready'));
             } catch (err) {
                 console.error('載入 king_list.toml 失敗', err);
                 el.innerHTML = '<p style="color:#c00;padding:1em;">載入失敗：' + escapeHtml(err.message) + '</p>';
             }
+        })();
+
+        // ===== 新手導覽 =====
+        (function initOnboardingTour() {
+            const overlay = document.getElementById('modal-overlay');
+            const outerScrollEl = document.getElementById('outer-scroll');
+            // Matches the site's own mobile breakpoint (see the @media (max-width: 767px) rules
+            // above), not actual touch hardware — a narrowed desktop window shows the swipe wording
+            // too, which is correct here since it's really asking "is the layout in mobile mode?"
+            const isTouch = window.matchMedia('(max-width: 767px)').matches;
+
+            function openModal() { overlay.classList.add('show'); }
+            function closeModal() { overlay.classList.remove('show'); }
+
+            function pickDemoKingBox() {
+                const boxes = Array.from(document.querySelectorAll('.king-box:not(.empty)'));
+                const withLink = boxes.find(b => (b.getAttribute('data-events-full') || '').includes('verse-link'));
+                return withLink || boxes[0] || null;
+            }
+
+            function pickKingBoxByName(nameZh) {
+                return document.querySelector(`.king-box[data-name-zh="${nameZh}"]`);
+            }
+
+            function findProphetBoxByName(nameZh) {
+                return Array.from(document.querySelectorAll('.prophet-box')).find(b => {
+                    const nameEl = b.querySelector('.prophet-box-name');
+                    return nameEl && nameEl.textContent.trim() === nameZh;
+                }) || null;
+            }
+
+            // getBoundingClientRect() is viewport-relative (changes as you scroll); adding the
+            // scroll container's current scrollLeft back converts it to a position measured from the
+            // scrollable content's own left edge, which stays correct no matter where #outer-scroll
+            // currently happens to be scrolled to.
+            function contentLeftOf(el) {
+                if (!el || !outerScrollEl) return null;
+                const er = el.getBoundingClientRect();
+                const sr = outerScrollEl.getBoundingClientRect();
+                return er.left - sr.left + outerScrollEl.scrollLeft;
+            }
+
+            const legendRowHtml = `
+                <div class="tour-legend-row">
+                    <div class="legend-item"><div class="legend-box" style="background:#d32f2f"></div><span style="color:#d32f2f">好王 / 行神喜悅的事</span></div>
+                    <div class="legend-item"><div class="legend-box" style="background:#757575"></div><span style="color:#757575">介於兩者之間</span></div>
+                    <div class="legend-item"><div class="legend-box" style="background:#000"></div><span style="color:#000">惡王 / 行神不喜悅的事</span></div>
+                    <div class="legend-item"><div class="legend-box" style="background:#1976d2"></div><span style="color:#1976d2">神作為</span></div>
+                    <div class="legend-item"><div class="legend-box" style="background:#2e7d32"></div><span style="color:#2e7d32">外邦作為</span></div>
+                </div>`;
+            const kbdRowHtml = `
+                <div class="tour-kbd-row">
+                    <span><kbd>←</kbd><kbd>→</kbd> 切換君王</span>
+                    <span><kbd>↑</kbd><kbd>↓</kbd> 南國／北國</span>
+                </div>`;
+
+            let demoBox = null;
+
+            const steps = [
+                {
+                    target: () => { demoBox = pickDemoKingBox(); return demoBox; },
+                    before: closeModal,
+                    title: '① 點擊君王卡片看詳情',
+                    body: '每一張卡片代表一位君王。點擊卡片會展開完整視窗，列出他在位期間的所有事件。',
+                },
+                {
+                    target: '#modal-card .king-events',
+                    before: () => { if (demoBox) demoBox.click(); else openModal(); },
+                    title: '② 文字顏色的意思',
+                    bodyHtml: '事件文字的顏色代表性質：' + legendRowHtml,
+                },
+                {
+                    target: () => document.querySelector('#modal-card .verse-link') ? '#modal-card .verse-link' : '#modal-card .king-events',
+                    before: openModal,
+                    title: '③ 點擊超連結讀原文',
+                    body: '括號內的經節是超連結，點一下會另開分頁，連到聖經原文對照。',
+                },
+                {
+                    target: '#modal-card',
+                    // Left-anchoring (the default) would pin the card to the whole modal's far-left
+                    // edge; right-anchor it instead so it lands roughly where step 3's card did.
+                    cardAlign: 'right',
+                    // Mobile only: keeps the card off Solomon's name (see placeCard). Desktop keeps
+                    // the default placement.
+                    cardFallbackBottom: isTouch,
+                    // Switch the demo to a different king (Solomon) here specifically: this step is
+                    // teaching "arrow keys move you to the next king," so actually showing a new king
+                    // makes that concrete instead of leaving the same David card on screen the whole
+                    // time.
+                    before: () => {
+                        const solomonBox = pickKingBoxByName('所羅門');
+                        if (solomonBox) solomonBox.click();
+                        else if (demoBox) demoBox.click();
+                        else openModal();
+                    },
+                    title: '④ ' + (isTouch ? '用手指滑動切換' : '用鍵盤方向鍵切換'),
+                    bodyHtml: isTouch
+                        ? '在視窗中左右滑動可切換上一位／下一位君王，上下滑動可切換到同時期北國／南國的君王。'
+                        : '在視窗中可以用鍵盤方向鍵切換到上一位／下一位君王，或同時期北國／南國的君王。按 Esc 可關閉視窗。' + kbdRowHtml,
+                },
+                {
+                    target: ['ALL:.prophet-track'],
+                    // Opens on 示瑪雅 (Shemaiah) specifically, demo-scrolls to 阿摩司 (Amos)
+                    // specifically — both positions computed from where those two prophet boxes
+                    // actually are, not a fixed pixel guess.
+                    before: () => {
+                        closeModal();
+                        if (!outerScrollEl) return;
+                        const shemaiah = findProphetBoxByName('示瑪雅');
+                        const startLeft = shemaiah ? Math.max(0, contentLeftOf(shemaiah) - 24) : 0;
+                        outerScrollEl.scrollTo({ left: startLeft, behavior: 'auto' });
+                    },
+                    // This nudge is a deliberate demo (unlike the instant scrollIntoView above, it's
+                    // meant to be watched), so it stays smooth — but the spotlight was already placed
+                    // before it started, so without re-syncing afterward the prophet tracks visibly
+                    // slide out from under their own highlight as this animates.
+                    after: () => {
+                        if (!outerScrollEl) return;
+                        const amos = findProphetBoxByName('阿摩司');
+                        const endLeft = amos ? Math.max(0, contentLeftOf(amos) - 24) : outerScrollEl.scrollLeft + 260;
+                        outerScrollEl.scrollTo({ left: endLeft, behavior: 'smooth' });
+                        pendingTimers.push(setTimeout(() => placeOn(Array.from(document.querySelectorAll('.prophet-track'))), 450));
+                    },
+                    title: '⑤ 左右移動看先知服事時間',
+                    body: '上下的藍色色塊是當時著名先見、神人、先知的服事時間。時間軸可以左右拖曳／滑動，方便對照君王與先知的年代。',
+                },
+                {
+                    target: ['.keyboard-hint', '.legend'],
+                    title: '⑥ 忘記的話，看這張小抄',
+                    body: '操作方式與文字顏色的意思都忘記了也沒關係，隨時可以回來看這兩塊提示複習一次。',
+                },
+            ];
+
+            let current = 0;
+            // Every renderStep() schedules a few setTimeouts (reposition corrections, step.after).
+            // Navigating away from that step (Next/Prev/skip/restart) must cancel them — otherwise a
+            // stale timer from a step you've already left fires later and quietly scrolls/repositions
+            // things out from under whatever step you're actually on now.
+            let pendingTimers = [];
+            // The timers above only get scheduled from inside renderStep()'s requestAnimationFrame
+            // callback — so if renderStep() runs again before that rAF has actually fired (steps
+            // changing faster than a frame, e.g. quick repeated clicks), the stale rAF is still
+            // queued and will later push ITS OWN timers in too, which the clear below never knew
+            // about since they didn't exist yet when it ran. Cancel the rAF itself, not just timers.
+            let pendingRAF = null;
+            function clearPendingTimers() {
+                pendingTimers.forEach(id => clearTimeout(id));
+                pendingTimers = [];
+                if (pendingRAF !== null) {
+                    cancelAnimationFrame(pendingRAF);
+                    pendingRAF = null;
+                }
+            }
+            const dim = document.getElementById('tour-dim');
+            const maskEl = document.getElementById('tour-mask');
+            const SVG_NS = 'http://www.w3.org/2000/svg';
+            const card = document.getElementById('tour-card');
+            const titleEl = document.getElementById('tour-title');
+            const bodyEl = document.getElementById('tour-body');
+            const labelEl = document.getElementById('tour-step-label');
+            const dotsEl = document.getElementById('tour-dots');
+            const prevBtn = document.getElementById('tour-prev-btn');
+            const nextBtn = document.getElementById('tour-next-btn');
+
+            function buildDots() {
+                dotsEl.innerHTML = '';
+                steps.forEach((_, i) => {
+                    const d = document.createElement('span');
+                    if (i === current) d.classList.add('on');
+                    dotsEl.appendChild(d);
+                });
+            }
+
+            // A selector string resolves to one element; prefix it "ALL:" to resolve every match
+            // (e.g. both the north and south prophet tracks).
+            function resolveEls(target) {
+                if (target instanceof Element) return [target];
+                if (typeof target !== 'string') return [];
+                if (target.startsWith('ALL:')) return Array.from(document.querySelectorAll(target.slice(4)));
+                const el = document.querySelector(target);
+                return el ? [el] : [];
+            }
+
+            // A target's own getBoundingClientRect() can be far taller/wider than what's actually
+            // visible when it sits inside a scrollable/clipped ancestor (e.g. the long event list
+            // inside the modal's overflow-y:auto card) — clip the rect to every such ancestor so the
+            // spotlight never bleeds past what the user can actually see.
+            function clipToScrollParents(el, rect) {
+                let node = el.parentElement;
+                while (node && node !== document.documentElement) {
+                    const cs = getComputedStyle(node);
+                    if (cs.overflow !== 'visible' || cs.overflowX !== 'visible' || cs.overflowY !== 'visible') {
+                        const cr = node.getBoundingClientRect();
+                        rect = {
+                            top: Math.max(rect.top, cr.top),
+                            left: Math.max(rect.left, cr.left),
+                            bottom: Math.min(rect.bottom, cr.bottom),
+                            right: Math.min(rect.right, cr.right),
+                        };
+                    }
+                    node = node.parentElement;
+                }
+                return rect;
+            }
+
+            // One rect per element (not merged): highlighting two disjoint elements (e.g. the
+            // north AND south prophet tracks) must cut two separate holes, never one bounding
+            // box that would also un-dim everything sitting between them.
+            function rectsForEls(els) {
+                return els
+                    .map(el => clipToScrollParents(el, el.getBoundingClientRect()))
+                    // clipToScrollParents rebuilds the rect as a plain {top,left,bottom,right}
+                    // object once any ancestor clips it — width/height are DOMRect-only getters,
+                    // not real own properties, so they'd silently read as undefined (NaN once added
+                    // to a number) from that point on if we didn't recompute them here.
+                    .map(r => ({ top: r.top, left: r.left, bottom: r.bottom, right: r.right, width: r.right - r.left, height: r.bottom - r.top }))
+                    .filter(r => r.height > 0 && r.width > 0);
+            }
+
+            function mergeRects(rects) {
+                if (!rects.length) return null;
+                const top = Math.min(...rects.map(r => r.top));
+                const left = Math.min(...rects.map(r => r.left));
+                const right = Math.max(...rects.map(r => r.right));
+                const bottom = Math.max(...rects.map(r => r.bottom));
+                return { top, left, bottom, right, width: right - left, height: bottom - top };
+            }
+
+            // Reuses/creates one hole <rect> inside the shared mask per rect needed this step,
+            // removing any extra ones left over from a step that needed more. Because every hole
+            // lives in the SAME mask, they punch out of the SAME dim rect — no paint-order fight
+            // between separate elements, and zero holes just means the mask is all-white (fully dim).
+            function getSpotlightEls(n) {
+                const els = Array.from(maskEl.querySelectorAll('rect.tour-hole'));
+                while (els.length < n) {
+                    const r = document.createElementNS(SVG_NS, 'rect');
+                    r.setAttribute('class', 'tour-hole');
+                    r.setAttribute('fill', 'black');
+                    r.setAttribute('rx', '10');
+                    r.setAttribute('ry', '10');
+                    maskEl.appendChild(r);
+                    els.push(r);
+                }
+                while (els.length > n) els.pop().remove();
+                return els;
+            }
+
+            // #tour-dim is position:fixed with no viewBox, so its SVG user-space units are plain
+            // CSS pixels from the viewport's top-left — the same coordinate space getBoundingClientRect()
+            // returns — and #tour-card is itself position:fixed, so no window.scrollY/scrollX offset
+            // belongs in either of these.
+            function placeSpotlight(el, r) {
+                const pad = 6;
+                el.setAttribute('x', r.left - pad);
+                el.setAttribute('y', r.top - pad);
+                el.setAttribute('width', r.width + pad * 2);
+                el.setAttribute('height', r.height + pad * 2);
+            }
+
+            // align: 'right' anchors the card to the highlighted rect's right edge instead of its
+            // left — used for steps (like step 4) whose target is the whole wide modal, where
+            // left-anchoring would otherwise pin the card to the modal's far-left edge.
+            // fallbackBottom: when the card doesn't fit below the target, pin it to the viewport's
+            // bottom instead of the default "just above the target". Opt-in per step only — on a
+            // phone the whole modal is nearly screen-height, so "above" gets clamped back down onto
+            // the modal's own top (the king's name); but other steps rely on the default.
+            function placeCard(r, align, fallbackBottom) {
+                const cardW = 300;
+                let top = r.bottom + 14;
+                let left = align === 'right' ? (r.right - cardW) : r.left;
+                if (top + 200 > window.innerHeight) {
+                    top = fallbackBottom ? window.innerHeight - 210 : r.top - 210;
+                }
+                if (top < 10) top = 10;
+                if (left + cardW > window.innerWidth - 10) left = window.innerWidth - cardW - 10;
+                if (left < 10) left = 10;
+                card.style.top = top + 'px';
+                card.style.left = left + 'px';
+            }
+
+            function placeOn(els, cardAlign, cardFallbackBottom) {
+                const rects = rectsForEls(els);
+                // Always resync the spotlight element COUNT to the current valid rects — including
+                // down to zero. A target that's currently scrolled out of view (e.g. right after
+                // startTour(), before scrollIntoView has settled) clips to a degenerate rect and is
+                // filtered out here; if we bailed out instead of reaching getSpotlightEls(0), the
+                // *previous* step's spotlight(s) would stay sitting on screen, stale and wrong,
+                // until a later timer call finally produces a valid rect.
+                const spotlightEls = getSpotlightEls(rects.length);
+                rects.forEach((r, i) => placeSpotlight(spotlightEls[i], r));
+                const merged = mergeRects(rects);
+                if (merged) placeCard(merged, cardAlign, cardFallbackBottom);
+            }
+
+            function renderStep() {
+                clearPendingTimers();
+                const step = steps[current];
+                if (step.before) step.before();
+                labelEl.textContent = `步驟 ${current + 1} / ${steps.length}`;
+                titleEl.textContent = step.title;
+                if (step.bodyHtml) bodyEl.innerHTML = step.bodyHtml;
+                else bodyEl.textContent = step.body;
+                prevBtn.style.visibility = current === 0 ? 'hidden' : 'visible';
+                nextBtn.textContent = current === steps.length - 1 ? '完成' : '下一步';
+                buildDots();
+
+                pendingRAF = requestAnimationFrame(() => {
+                    pendingRAF = null;
+                    let target = step.target;
+                    if (typeof target === 'function') target = target();
+                    const targets = Array.isArray(target) ? target : [target];
+                    const els = targets.flatMap(resolveEls);
+                    const firstEl = els[0];
+                    if (firstEl) {
+                        // The modal is position:fixed (always centered in the viewport), so scrolling
+                        // the page to "reveal" something inside it is pointless and only drifts scrollY.
+                        const insideModal = overlay.contains(firstEl);
+                        if (!insideModal) {
+                            // 'auto', not 'smooth': an animated scroll takes an indeterminate amount
+                            // of time to settle, so the spotlight (placed immediately below, since it
+                            // must never just keep showing the previous step's stale position) would
+                            // be computed against a mid-scroll layout and visibly jump once the scroll
+                            // actually finishes — i.e. it wouldn't land correctly on the first paint.
+                            // An instant scroll applies synchronously, so the very next layout read
+                            // (reposition(), right below) already reflects the final position.
+                            firstEl.scrollIntoView({ behavior: 'auto', block: 'center', inline: 'center' });
+                        }
+                        const reposition = () => placeOn(els, step.cardAlign, step.cardFallbackBottom);
+                        reposition();
+                        // Safety-net correction in case layout was still settling (e.g. web fonts,
+                        // images) — normally a no-op now that the scroll above is instant.
+                        pendingTimers.push(setTimeout(reposition, insideModal ? 30 : 120));
+                    }
+                    if (step.after) pendingTimers.push(setTimeout(step.after, 280));
+                });
+            }
+
+            function startTour() {
+                current = 0;
+                // A previous run (or the visitor's own scrolling) can leave #outer-scroll scrolled
+                // sideways, which would put step 1's king box off-screen the instant the tour starts.
+                if (outerScrollEl) outerScrollEl.scrollTo({ left: 0, behavior: 'auto' });
+                dim.classList.add('active');
+                card.style.display = 'block';
+                renderStep();
+            }
+            function endTour() {
+                clearPendingTimers();
+                dim.classList.remove('active');
+                card.style.display = 'none';
+                closeModal();
+                try { localStorage.setItem('vb_tour_seen', '1'); } catch (e) {}
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (current === steps.length - 1) { endTour(); return; }
+                current++;
+                renderStep();
+            });
+            prevBtn.addEventListener('click', () => {
+                if (current === 0) return;
+                current--;
+                renderStep();
+            });
+            document.getElementById('tour-skip-btn').addEventListener('click', endTour);
+            document.addEventListener('keydown', e => {
+                if (dim.classList.contains('active') && e.key === 'Escape') endTour();
+            });
+            window.addEventListener('resize', () => {
+                if (dim.classList.contains('active')) renderStep();
+            });
+
+            document.getElementById('tour-replay').addEventListener('click', startTour);
+
+            document.addEventListener('visbible:ready', () => {
+                try {
+                    if (!localStorage.getItem('vb_tour_seen')) startTour();
+                } catch (e) {}
+            });
         })();
     </script>
 </body>
